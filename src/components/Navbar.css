@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita+Swashed');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .navbar {
     background: linear-gradient(90deg, rgb(9, 77, 44) 0%, rgb(3, 36, 18) 100%);
     height: 80px;
@@ -11,7 +14,7 @@
   }
   
   .navbar-container {
-    font: normal 15pt Ubuntu;  
+    font: normal 15pt Roboto;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +23,15 @@
   }
   
   .navbar-logo {
-    font: normal 20pt Ubuntu;  
+
+    font: normal 18pt Sansita Swashed; 
     color: #fff;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     display: flex;
-    align-items: center;
+    align-items: start;
   }
   
   .fa-typo3 {
