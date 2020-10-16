@@ -2,16 +2,16 @@ import React from 'react';
 import Navbar from './components/Navbar.js';
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import './App.css';
+import Home from './components/Paginas/Home'
 
 function App() {
   return (
    <>
    <Router>
 
-   
+   <Navbar/>
    <Switch>
-     <Route path='/' exact />
-     <Route path='/header' exact component={Navbar} />
+     <Route path='/' exact component={Home} />
    </Switch>
 
    </Router>
