@@ -6,18 +6,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(243, 207, 122, 0.724);
+  box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
   object-fit: contain;
 }
 
 .hero-container > h1 {
   font: normal 40pt Sansita Swashed;
-  color: rgb(44, 24, 24);
+  color: rgb(77, 29, 29);
   margin-top: top;
+  text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
 }
 
 .hero-container > p {
-  font-family: "Sansita Swashed", "Roboto", "Ubuntu", sans-serif;
+  font-family: "Roboto", "Sansita Swashed", "Ubuntu", sans-serif;
+  text-align: center;
   margin-top: 8px;
   color: rgb(44, 24, 24);
   font-size: 32px;
@@ -35,7 +37,17 @@
 }
 
 .fundo {
-  background-color: rgb(27, 5, 5);
+  background: rgb(255, 248, 205) center center/cover no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
   display: flex;
   justify-content: center;
+}
+.descricao {
+  background: rgba(172, 72, 33, 0.607) center center/cover no-repeat;
+  text-align: center;
+  font: normal 25pt Sansita Swashed;
+  color: rgb(43, 12, 12);
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
+  width: 1500px;
+  height: 150px;
 }
