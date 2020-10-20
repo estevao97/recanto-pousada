@@ -1,0 +1,27 @@
+.base {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+ display: flex;
+ flex-direction: column; 
+ max-width: 350px;  
+ flex-grow: 1;
+}
+.container > h1 {
+    font: normal 40pt Sansita Swashed;
+    color: rgb(44, 24, 24);
+    margin-top: top;
+    display: flex;
+    justify-content: center;
+}
+.imputs {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px; 
+    margin-left: 300px;
+    margin-right: 300px;
+}
