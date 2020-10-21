@@ -3,6 +3,7 @@ import "../App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as Carrossel } from "react-responsive-carousel";
 import "./HeroSection.css";
+import Maps from "../components/Maps/Maps";
 
 function HeroSection() {
   return (
@@ -55,17 +56,20 @@ function HeroSection() {
           </Carrossel>
         </div>
       </div>
-
       <div className="descricao">
         <h2>Venha conhecer nossa pousada</h2>
       </div>
       <p>
-        <br />A pousada Recanto de Minas traz para você o melhor serviço de
-        hospedagem e ao mesmo tempo possibilita um contato intenso com a
+        <br /> <br /> A pousada Recanto de Minas traz para você o melhor serviço
+        de hospedagem e ao mesmo tempo possibilita um contato intenso com a
         natureza. Possuímos os melhores quartos da região e lindas trilhas com
         cachoeiras que só Minas Gerais pode oferecer. Não perca essa
-        oportunidade!
+        oportunidade! <br /> <br /> <br />
       </p>
+      <div className="localizacao">
+        <h3>Confira nossa localização </h3>
+      </div>
+      <Maps />
       <p>&copy;Equipe6 </p>
     </div>
   );
