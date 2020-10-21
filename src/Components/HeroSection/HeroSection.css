@@ -51,3 +51,13 @@
   width: 1500px;
   height: 150px;
 }
+
+.localizacao {
+  background: rgba(172, 72, 33, 0.607) center center/cover no-repeat;
+  text-align: center;
+  font: normal 30pt Sansita Swashed;
+  color: rgb(43, 12, 12);
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
+  width: 1500px;
+  height: 150px;
+}

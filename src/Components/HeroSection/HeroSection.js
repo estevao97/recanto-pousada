@@ -3,6 +3,7 @@ import "../../App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as Carrossel } from "react-responsive-carousel";
 import "./HeroSection.css";
+import Maps from "../components/Maps/Maps";
 
 function HeroSection() {
   return (
@@ -13,7 +14,7 @@ function HeroSection() {
           <Carrossel showArrows={true} autoPlay={true} infiniteLoop={true}>
             <div>
               <img
-                src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?cs=srgb&dl=pexels-pixabay-262048.jpg&fm=jpg"
+                src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?cs=srgb&dl=pexels-pixabay-279746.jpg&fm=jpg"
                 alt="Aqui tem um quarto"
               />
             </div>
@@ -24,9 +25,17 @@ function HeroSection() {
                 alt="Aqui tem um quarto"
               />
             </div>
+
             <div>
               <img
-                src="https://images.pexels.com/photos/2280844/pexels-photo-2280844.jpeg?cs=srgb&dl=pexels-lucas-pezeta-2280844.jpg&fm=jpg"
+                src="https://images.pexels.com/photos/3209049/pexels-photo-3209049.jpeg?cs=srgb&dl=pexels-jason-boyd-3209049.jpg&fm=jpg"
+                alt="Aqui tem um quarto"
+              />
+            </div>
+
+            <div>
+              <img
+                src="https://images.pexels.com/photos/2918147/pexels-photo-2918147.jpeg?cs=srgb&dl=pexels-kelly-lacy-2918147.jpg&fm=jpg"
                 alt="Aqui tem um quarto"
               />
             </div>
@@ -47,17 +56,20 @@ function HeroSection() {
           </Carrossel>
         </div>
       </div>
-
       <div className="descricao">
         <h2>Venha conhecer nossa pousada</h2>
       </div>
       <p>
-        <br />A pousada Recanto de Minas traz para você o melhor serviço de
-        hospedagem e ao mesmo tempo possibilita um contato intenso com a
+        <br /> <br /> A pousada Recanto de Minas traz para você o melhor serviço
+        de hospedagem e ao mesmo tempo possibilita um contato intenso com a
         natureza. Possuímos os melhores quartos da região e lindas trilhas com
         cachoeiras que só Minas Gerais pode oferecer. Não perca essa
-        oportunidade!
+        oportunidade! <br /> <br /> <br />
       </p>
+      <div className="localizacao">
+        <h3>Confira nossa localização </h3>
+      </div>
+      <Maps />
       <p>&copy;Equipe6 </p>
     </div>
   );
