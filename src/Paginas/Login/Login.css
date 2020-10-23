@@ -1,3 +1,12 @@
+.Secao {
+  background: rgb(255, 248, 205);
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.538);
+}
+
 .base {
   height: 100%;
   display: flex;
@@ -14,18 +23,27 @@
   justify-content: center;
 }
 .container > h1 {
-  font: normal 40pt Sansita Swashed;
+  font: normal 30pt Sansita Swashed;
   color: rgb(77, 29, 29);
   margin-top: top;
   text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
+
 .imputs {
+  font: normal 13pt Roboto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 350px;
   margin-left: 300px;
   margin-right: 300px;
+}
+.imput > p {
+  text-align: center;
+}
+.Botao {
+  text-align: center;
 }

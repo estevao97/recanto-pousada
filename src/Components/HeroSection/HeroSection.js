@@ -3,7 +3,7 @@ import "../../App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as Carrossel } from "react-responsive-carousel";
 import "./HeroSection.css";
-import Maps from "../components/Maps/Maps";
+import Maps from "../Maps/Maps";
 
 function HeroSection() {
   return (
