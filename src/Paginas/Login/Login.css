@@ -1,49 +1,75 @@
-.Secao {
-  background: rgb(255, 248, 205);
-  border-radius: 10px;
-  padding: 15px;
-  width: 500px;
-  margin: auto;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.538);
+* {
+}
+html,
+body {
+  height: auto;
+  width: auto;
+}
+div#root {
+  height: auto;
+  width: auto;
 }
 
-.base {
-  height: 100%;
+.base-login {
+  background: rgb(255, 248, 205) center center/cover no-repeat;
+  height: 43.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 350px;
   flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-}
-.container > h1 {
-  font: normal 30pt Sansita Swashed;
-  color: rgb(77, 29, 29);
-  margin-top: top;
-  text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
-.imputs {
-  font: normal 13pt Roboto;
+.forms-login {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background: #6e3b3b;
+  border-radius: 6%;
+  padding: 1%;
+  width: 35%;
+  height: 70%;
+}
+.forms-login > h1 {
+  display: flex;
   justify-content: center;
-  max-width: 350px;
-  margin-left: 300px;
-  margin-right: 300px;
-}
-.imput > p {
+  font: normal 40pt Sansita Swashed;
   text-align: center;
+  font-size: 4vw;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
 }
-.Botao {
-  text-align: center;
+.dados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 60%;
+  flex-wrap: 2;
+}
+.imputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+  width: 100%;
+}
+.email,
+.senha {
+  padding: 2%;
+  border-style: none;
+  width: 70%;
+}
+
+.link-cadastro {
+  font: normal 10pt Sansita Swashed;
+  font-size: 1.2vw;
+  color: #ffffff;
+  margin-top: top;
+  text-shadow: rgba(0, 0, 0, 0.593) 2px 2px 2px;
+  padding: 0%;
+}
+.link-cadastro:hover {
+  color: #e47a7a;
 }

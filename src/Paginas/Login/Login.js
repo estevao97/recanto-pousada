@@ -1,38 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form } from "react-bootstrap";
+import { Link, useHistory } from "react-router-dom";
+import Button from "../../Components/Button/Button";
 import "./Login.css";
-import "../../Components/HeroSection/HeroSection.css";
-import "../../Components/Navbar/Navbar.css";
-import { Button } from "../../Components/Button/Button.js";
 
 function Login() {
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const history = useHistory();
+
+  function login() {
+    if (email === "pauloestevao92@gmail.com" && password === 123) {
+      history.push("cadastro");
+    }
+  }
+
   return (
-    <div className="Secao">
-      <div className="base">
-        <div className="container">
-          <h1>Recanto de Minas</h1>
-          <Form>
-            <div className="imputs">
-              <Form.Group controlId="email">
-                <p>Faça seu login</p>
+    <div className="base-login">
+      <Form className="forms-login">
+        <h1>Seja bem vindo</h1>
+        <div className="dados">
+          <Form.Group className="imputs" controlId="email">
+            <Form.Control
+              className="email"
+              type="email"
+              placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </Form.Group>
 
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Email" />
-                <Form.Text className="text-muted"></Form.Text>
-              </Form.Group>
-
-              <Form.Group controlId="senha">
-                <Form.Label>Senha</Form.Label>
-                <Form.Control type="password" placeholder="Senha" />
-              </Form.Group>
-              <div className="Botao">
-                <Button buttonStyle="btn--outline">Login</Button>
-              </div>
-              {}
-            </div>
-          </Form>
+          <Form.Group className="imputs" controlId="senha">
+            <Form.Control
+              className="senha"
+              type="password"
+              placeholder="Senha"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </Form.Group>
+          <Link className="link-cadastro" to="cadastro">
+            Não é cadastrado? Crie sua conta.
+          </Link>
         </div>
-      </div>
+
+        {Button && (
+          <Button
+            buttonStyle="btn--outline"
+            onClick={() => {
+              login();
+            }}
+          >
+            Login
+          </Button>
+        )}
+      </Form>
     </div>
   );
 }
