@@ -14,7 +14,7 @@ div#root {
 .base-login {
   background: rgb(255, 248, 205) center center/cover no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
-  height: 43.5vw;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,8 @@ div#root {
   border-radius: 6%;
   padding: 1%;
   width: 35%;
-  height: 70%;
+  height: 70vh;
+  max-height: 500px;
 }
 .forms-login > h1 {
   display: flex;
@@ -74,4 +75,9 @@ div#root {
 }
 .link-cadastro:hover {
   color: #e47a7a;
+}
+@media screen and (max-width: 600px) {
+  .forms-login {
+    height: 40vh;
+  }
 }

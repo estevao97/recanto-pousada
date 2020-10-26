@@ -1,72 +1,103 @@
-import React, { Col } from "react";
-import { Form } from "react-bootstrap";
+import React from "react";
+import TextField from "@material-ui/core/TextField";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Button from "../../Components/Button/Button";
 import "./Cadastro.css";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#f3cf7a",
+      backgroundcolor: "#ffff",
+    },
+    secondary: {
+      main: "#6e3b3b",
+    },
+  },
+  textField: {
+    color: "#6e3b3b",
+  },
+});
 
 function Cadastro() {
   return (
     <div className="base-cadastro">
-      <Form className="forms-cadastro">
-        <h1>Registre-se</h1>
-
-        <Form.Group className="imput-unico" as={Col} controlId="name">
-          <Form.Control className="dados" type="name" placeholder="Nome" />
-        </Form.Group>
-
-        <Form.Row className="forms-linhas">
-          <Form.Group className="imput-comp" as={Col} controlId="nacimento">
-            <Form.Control className="dados" placeholder="Data de nascimento" />
-          </Form.Group>
-
-          <Form.Group className="imput-comp" as={Col} controlId="cpf">
-            <Form.Control className="dados" placeholder="CPF" />
-          </Form.Group>
-        </Form.Row>
-
-        <Form.Group className="imput-unico" as={Col} controlId="email">
-          <Form.Control className="dados" type="email" placeholder="Email" />
-        </Form.Group>
-
-        <Form.Group className="imput-unico" controlId="endereco">
-          <Form.Control className="dados" placeholder="Endereço" />
-        </Form.Group>
-
-        <Form.Row className="forms-linhas">
-          <Form.Group className="imput-comp" as={Col} controlId="city">
-            <Form.Control className="dados" placeholder="Cidade" />
-          </Form.Group>
-
-          <Form.Group className="imput-comp" as={Col} controlId="gridState">
-            <Form.Control
-              className="dados"
-              as="select"
-              defaultValue=" "
-              placeholder=""
-            >
-              <option>Minas Gerais</option>
-              <option>...</option>
-            </Form.Control>
-          </Form.Group>
-        </Form.Row>
-
-        <Form.Group
-          className="imput-unico"
-          as={Col}
-          controlId="formGridPassword"
-        >
-          <Form.Control
-            className="dados"
-            type="password"
-            placeholder="Password"
-          />
-        </Form.Group>
-
-        {Button && (
-          <Button buttonStyle="btn--outline" onClick={() => {}}>
-            Cadastre-se
-          </Button>
-        )}
-      </Form>
+      <ThemeProvider theme={theme}>
+        <div className="forms-cadastro">
+          <h1>Registre-se</h1>
+          <div className="linhas-comp" theme={theme}>
+            <TextField
+              id="name"
+              label="Nome"
+              style={{ margin: 15 }}
+              placeholder="Nome"
+              InputProps="#6e3b3b"
+              fullWidth
+              margin="normal"
+              variant="outlined"
+              color="primary"
+            />
+            <TextField
+              id="cpf"
+              label="CPF"
+              style={{ margin: 15 }}
+              placeholder="CPF"
+              fullWidth
+              margin="normal"
+              variant="outlined"
+            />
+          </div>
+          <div className="linha-unica">
+            <TextField
+              id="cidade"
+              label="Cidade"
+              style={{ margin: 15 }}
+              placeholder="Cidade"
+              fullWidth
+              margin="normal"
+              variant="outlined"
+            />
+          </div>
+          <div className="linha-unica">
+            <TextField
+              id="endereco"
+              label="Endereço"
+              style={{ margin: 15 }}
+              placeholder="Endereço"
+              fullWidth
+              margin="normal"
+              variant="outlined"
+            />
+          </div>
+          <div className="linha-unica">
+            <TextField
+              id="email"
+              label="Email"
+              style={{ margin: 15 }}
+              placeholder="Email"
+              fullWidth
+              margin="normal"
+              variant="outlined"
+            />
+          </div>
+          <div className="linha-unica">
+            <TextField
+              id="senha"
+              label="Senha"
+              style={{ margin: 15 }}
+              placeholder="Senha"
+              fullWidth
+              margin="normal"
+              variant="outlined"
+            />
+          </div>
+          <div className="linha-unica">
+            {Button && (
+              <Button buttonStyle="btn--outline">CONCLUIR REGISTRO</Button>
+            )}
+          </div>
+        </div>
+      </ThemeProvider>
     </div>
   );
 }
