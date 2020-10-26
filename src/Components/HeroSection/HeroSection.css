@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 .hero-container {
   background: rgb(255, 248, 205) center center/cover no-repeat;
   height: 100%;
@@ -11,27 +13,33 @@
 }
 
 .hero-container > h1 {
-  font: normal 40pt Sansita Swashed;
+  font: normal 80pt Sansita Swashed;
   color: rgb(77, 29, 29);
-  margin-top: top;
+  margin: 20px;
+  text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
+}
+
+.hero-container > h2 {
+  font: normal 35pt Roboto;
+  color: rgb(77, 29, 29);
+  margin-top: 8px;
   text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
 }
 
 .hero-container > p {
-  font-family: "Roboto", "Sansita Swashed", "Ubuntu", sans-serif;
-  text-align: center;
-  margin-top: 8px;
+  font: normal 15pt Roboto;
+  text-align: justify;
+  margin: 25px;
   color: rgb(44, 24, 24);
-  font-size: 32px;
+  text-justify: inter-cluster;
 }
 
 .hero-container > p {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .Imagens {
-  height: 50%;
-  width: 90%;
+  width: 70%;
   display: flex;
   position: relative;
 }
@@ -60,4 +68,10 @@
   text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
   width: 100%;
   flex-grow: 1;
+}
+.Logo {
+  float: right;
+  width: 400px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.538);
+  margin: 30px;
 }

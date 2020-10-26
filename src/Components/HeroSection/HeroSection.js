@@ -4,11 +4,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as Carrossel } from "react-responsive-carousel";
 import "./HeroSection.css";
 import Maps from "../Maps/Maps";
+import Logo from "../../images/logo.png";
 
 function HeroSection() {
   return (
     <div className="hero-container">
-      <h1>Um lugar onde seu conforto é prioridade</h1>
+      <h1>Recanto de Minas</h1>
+      <h2>Um lugar onde seu conforto é prioridade</h2>
       <div className="fundo">
         <div className="Imagens">
           <Carrossel showArrows={true} autoPlay={true} infiniteLoop={true}>
@@ -59,15 +61,32 @@ function HeroSection() {
       <div className="descricao">
         <h2>Venha conhecer nossa pousada</h2>
       </div>
+
       <p>
-        <br /> <br /> A pousada Recanto de Minas traz para você o melhor serviço
-        de hospedagem e ao mesmo tempo possibilita um contato intenso com a
+        <br />
+        <img className="Logo" src={Logo} alt="Logo" />
+        <br />
+        <br /> A pousada Recanto de Minas traz para você o melhor serviço de
+        hospedagem e ao mesmo tempo possibilita um contato intenso com a
         natureza. Possuímos os melhores quartos da região e lindas trilhas com
         cachoeiras que só Minas Gerais pode oferecer. Não perca essa
-        oportunidade! <br /> <br /> <br />
+        oportunidade! b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
+        b b b b b b b b b b b b b b
+        <br /> <br /> <br />
       </p>
+
       <div className="localizacao">
-        <h3>Confira nossa localização </h3>
+        <h2>Confira nossa localização </h2>
       </div>
       <Maps />
       <p>&copy;Equipe6 </p>
