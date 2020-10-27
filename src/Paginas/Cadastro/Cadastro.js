@@ -1,103 +1,108 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Button from "../../Components/Button/Button";
 import "./Cadastro.css";
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#f3cf7a",
-      backgroundcolor: "#ffff",
+const CssTextField = withStyles({
+  root: {
+    "& label.Mui-focused": {
+      color: "#6e3b3b",
     },
-    secondary: {
-      main: "#6e3b3b",
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "#6e3b3b",
+      },
+      "&:hover fieldset": {
+        borderColor: "#ffff",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "#6e3b3b",
+      },
     },
   },
-  textField: {
-    color: "#6e3b3b",
+})(TextField);
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+    flexWrap: "wrap",
+    width: "90%",
+    flexGrow: "1",
+    margin: "2%",
   },
-});
+}));
 
 function Cadastro() {
+  const classes = useStyles();
   return (
     <div className="base-cadastro">
-      <ThemeProvider theme={theme}>
-        <div className="forms-cadastro">
-          <h1>Registre-se</h1>
-          <div className="linhas-comp" theme={theme}>
-            <TextField
-              id="name"
-              label="Nome"
-              style={{ margin: 15 }}
-              placeholder="Nome"
-              InputProps="#6e3b3b"
-              fullWidth
-              margin="normal"
-              variant="outlined"
-              color="primary"
-            />
-            <TextField
-              id="cpf"
-              label="CPF"
-              style={{ margin: 15 }}
-              placeholder="CPF"
-              fullWidth
-              margin="normal"
-              variant="outlined"
-            />
-          </div>
-          <div className="linha-unica">
-            <TextField
-              id="cidade"
-              label="Cidade"
-              style={{ margin: 15 }}
-              placeholder="Cidade"
-              fullWidth
-              margin="normal"
-              variant="outlined"
-            />
-          </div>
-          <div className="linha-unica">
-            <TextField
-              id="endereco"
-              label="Endereço"
-              style={{ margin: 15 }}
-              placeholder="Endereço"
-              fullWidth
-              margin="normal"
-              variant="outlined"
-            />
-          </div>
-          <div className="linha-unica">
-            <TextField
-              id="email"
-              label="Email"
-              style={{ margin: 15 }}
-              placeholder="Email"
-              fullWidth
-              margin="normal"
-              variant="outlined"
-            />
-          </div>
-          <div className="linha-unica">
-            <TextField
-              id="senha"
-              label="Senha"
-              style={{ margin: 15 }}
-              placeholder="Senha"
-              fullWidth
-              margin="normal"
-              variant="outlined"
-            />
-          </div>
-          <div className="linha-unica">
-            {Button && (
-              <Button buttonStyle="btn--outline">CONCLUIR REGISTRO</Button>
-            )}
-          </div>
+      <div className="forms-cadastro">
+        <h1>Registre-se</h1>
+        <div className="linhas-comp">
+          <CssTextField
+            className={classes.root}
+            label="Nome"
+            variant="outlined"
+            id="name"
+          />
+          <CssTextField
+            className={classes.root}
+            label="CPF"
+            variant="outlined"
+            id="cpf"
+          />
         </div>
-      </ThemeProvider>
+        <div className="linhas-comp">
+          <CssTextField
+            className={classes.root}
+            label="Rua"
+            variant="outlined"
+            id="rua"
+          />
+          <CssTextField
+            className={classes.root}
+            label="N°"
+            variant="outlined"
+            id="numero"
+          />
+        </div>
+        <div className="linhas-comp">
+          <CssTextField
+            className={classes.root}
+            label="Cidade"
+            variant="outlined"
+            id="cidade"
+          />
+          <CssTextField
+            className={classes.root}
+            label="Estado"
+            variant="outlined"
+            id="Estado"
+          />
+        </div>
+        <div className="linha-unica">
+          <CssTextField
+            className={classes.root}
+            label="Email"
+            variant="outlined"
+            id="email"
+          />
+        </div>
+        <div className="linha-unica">
+          <CssTextField
+            className={classes.root}
+            label="Senha"
+            variant="outlined"
+            id="senha"
+          />
+        </div>
+        <div className="linha-unica">
+          {Button && (
+            <Button buttonStyle="btn--outline">CONCLUIR REGISTRO</Button>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
