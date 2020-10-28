@@ -59,3 +59,8 @@ div#root {
   height: 10%;
   margin: 1%;
 }
+
+.btn-teste {
+  background-color: #6e3b3b !important;
+  color: #6e3b3b !important;
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: unset;
+}
+
+html,
+body {
+  height: auto;
+  width: auto;
+}
+div#root {
+  height: auto;
+  width: auto;
+}
+
+.base-fotos {
+  display: flex;
+  height: 42.2vw;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}

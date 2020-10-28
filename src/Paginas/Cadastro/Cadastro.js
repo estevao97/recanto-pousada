@@ -99,7 +99,9 @@ function Cadastro() {
         </div>
         <div className="linha-unica">
           {Button && (
-            <Button buttonStyle="btn--outline">CONCLUIR REGISTRO</Button>
+            <Button className="btn-teste" buttonStyle="btn--outline">
+              CONCLUIR REGISTRO
+            </Button>
           )}
         </div>
       </div>
