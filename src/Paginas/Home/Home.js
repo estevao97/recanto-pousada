@@ -1,6 +1,6 @@
 import React from "react";
 import "../../App.css";
-import HeroSection from "../../Components/HeroSection/HeroSection.js";
+import HeroSection from "../../components/HeroSection/HeroSection.js";
 
 function Home() {
   return (
