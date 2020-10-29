@@ -20,7 +20,7 @@
 }
 
 .hero-container > h2 {
-  font: normal 35pt Roboto;
+  font: normal 25pt Roboto;
   color: rgb(77, 29, 29);
   margin-top: 8px;
   text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
@@ -40,7 +40,7 @@
 
 .Imagens {
   width: 70%;
-  display: flex;
+  display: table-row;
   position: relative;
 }
 
