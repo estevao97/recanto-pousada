@@ -13,21 +13,14 @@ function QuartoFamilia() {
         <Carrossel showArrows={true} autoPlay={true} infiniteLoop={true}>
           <div>
             <img
-              src="https://www.pexels.com/pt-br/foto/cama-candelabro-comodo-dentro-de-casa-262048/"
+              src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
               alt="Aqui tem um quarto"
             />
           </div>
 
           <div>
             <img
-              src="https://www.pexels.com/pt-br/foto/projeto-arquitetonico-design-arquitetonico-arquitetura-castanho-4099299/"
-              alt="Área de convivência"
-            />
-          </div>
-
-          <div>
-            <img
-              src="https://www.pexels.com/pt-br/foto/afundar-apartamento-banheira-banheiro-2134224/"
+              src="https://images.pexels.com/photos/2134224/pexels-photo-2134224.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
               alt="Aqui tem um banheiro"
             />
           </div>

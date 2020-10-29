@@ -13,13 +13,13 @@ function QuartoSolteiro() {
           <Carrossel showArrows={true} autoPlay={true} infiniteLoop={true}>
             <div>
               <img
-                src="https://www.pexels.com/pt-br/foto/abajur-aconchego-apartamento-assento-2029722/"
+                src="https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
                 alt="Aqui tem um quarto"
               />
             </div>
             <div>
               <img
-                src="https://www.pexels.com/pt-br/foto/madeira-hotel-casa-lar-3620234/"
+                src="https://images.pexels.com/photos/3620234/pexels-photo-3620234.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
                 alt="Aqui tem um banheiro"
               />
             </div>

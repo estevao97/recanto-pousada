@@ -19,7 +19,7 @@ function QuartoCasal() {
             </div>
             <div>
               <img
-                src="https://www.pexels.com/pt-br/foto/banheiro-dentro-de-casa-interior-design-de-interiores-3965521/"
+                src="https://images.pexels.com/photos/3965521/pexels-photo-3965521.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
                 alt="Aqui tem um banheiro"
               />
             </div>
