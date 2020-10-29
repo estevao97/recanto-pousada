@@ -1,8 +1,28 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
+import TextField from "@material-ui/core/TextField";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Button from "../../Components/Button/Button";
 import "./Login.css";
+
+const CssTextField = withStyles({
+  root: {
+    "& label.Mui-focused": {
+      color: "#f3cf7a",
+    },
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "#f3cf7a",
+      },
+      "&:hover fieldset": {
+        borderColor: "#ffff",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "#f3cf7a",
+      },
+    },
+  },
+})(TextField);
 
 function Login() {
   const [email, setEmail] = useState();
@@ -17,42 +37,44 @@ function Login() {
 
   return (
     <div className="base-login">
-      <Form className="forms-login">
+      <div className="forms-login">
         <h1>Seja bem vindo</h1>
-        <div className="dados">
-          <Form.Group className="imputs" controlId="email">
-            <Form.Control
-              className="email"
-              type="email"
-              placeholder="Email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </Form.Group>
-
-          <Form.Group className="imputs" controlId="senha">
-            <Form.Control
-              className="senha"
-              type="password"
-              placeholder="Senha"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </Form.Group>
-          <Link className="link-cadastro" to="cadastro">
-            Não é cadastrado? Crie sua conta.
-          </Link>
+        <div className="linha">
+          <CssTextField
+            type="email"
+            className="email"
+            label="Email"
+            variant="outlined"
+            id="email"
+            onClick={login()}
+          />
         </div>
-
-        {Button && (
-          <Button
-            buttonStyle="btn--outline"
-            onClick={() => {
-              login();
-            }}
-          >
-            Login
-          </Button>
-        )}
-      </Form>
+        <div className="linha">
+          <CssTextField
+            type="password"
+            className="senha"
+            label="Senha"
+            variant="outlined"
+            id="senha"
+            onClick={login()}
+          />
+        </div>
+        <Link className="link-cadastro" to="cadastro">
+          Não é cadastrado? Crie sua conta.
+        </Link>
+        <div className="btn-login">
+          {Button && (
+            <Button
+              buttonStyle="btn--outline"
+              onClick={() => {
+                login();
+              }}
+            >
+              Login
+            </Button>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

@@ -42,27 +42,22 @@ div#root {
   color: #ffffff;
   text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
 }
-.dados {
+.linha {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-items: center;
   justify-content: center;
-  width: 90%;
-  height: 60%;
-  flex-wrap: 2;
-}
-.imputs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2%;
   width: 100%;
+  height: 10%;
+  margin: 2%;
 }
 .email,
 .senha {
-  padding: 2%;
-  border-style: none;
-  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  flex-grow: 1;
+  margin: 2%;
 }
 
 .link-cadastro {
@@ -76,6 +71,15 @@ div#root {
 .link-cadastro:hover {
   color: #e47a7a;
 }
+
+.btn-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 2%;
+}
+
 @media screen and (max-width: 600px) {
   .forms-login {
     height: 40vh;

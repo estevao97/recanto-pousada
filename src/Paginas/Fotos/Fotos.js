@@ -12,9 +12,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    width: "100%",
+    width: "85%",
     height: "100%",
     background: "#6e3b3b",
+    justifyContent: "space-around",
+    padding: "3%",
   },
 }));
 
@@ -43,11 +45,20 @@ export default function ImageGridList() {
     <div className="base-fotos">
       <div className={classes.root}>
         <GridList cellHeight={160} className={classes.gridList} cols={3}>
-          <GridListTile cols={3 || 3}>
+          <GridListTile cols={2 || 3}>
             <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
           </GridListTile>
           <GridListTile cols={1 || 3}>
+            <img src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?cs=srgb&dl=pexels-pixabay-279746.jpg&fm=jpg" />
+          </GridListTile>
+          <GridListTile cols={1 || 1}>
             <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
+          </GridListTile>
+          <GridListTile cols={1 || 1}>
+            <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
+          </GridListTile>
+          <GridListTile cols={1 || 1}>
+            <img src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?cs=srgb&dl=pexels-pixabay-279746.jpg&fm=jpg" />
           </GridListTile>
           <GridListTile cols={1 || 1}>
             <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
@@ -62,16 +73,7 @@ export default function ImageGridList() {
             <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
           </GridListTile>
           <GridListTile cols={1 || 1}>
-            <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
-          </GridListTile>
-          <GridListTile cols={1 || 1}>
-            <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
-          </GridListTile>
-          <GridListTile cols={1 || 1}>
-            <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
-          </GridListTile>
-          <GridListTile cols={1 || 1}>
-            <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
+            <img src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?cs=srgb&dl=pexels-pixabay-279746.jpg&fm=jpg" />
           </GridListTile>
           <GridListTile cols={1 || 1}>
             <img src="https://images.pexels.com/photos/2662183/pexels-photo-2662183.jpeg?cs=srgb&dl=pexels-josh-hild-2662183.jpg&fm=jpg" />
