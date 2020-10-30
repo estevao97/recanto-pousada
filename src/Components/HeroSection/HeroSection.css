@@ -48,8 +48,8 @@
   font: normal 25pt Sansita Swashed;
   color: rgb(43, 12, 12);
   text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
-  width: 1500px;
-  height: 150px;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .localizacao {
@@ -58,6 +58,6 @@
   font: normal 30pt Sansita Swashed;
   color: rgb(43, 12, 12);
   text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
-  width: 1500px;
-  height: 150px;
+  width: 100%;
+  flex-grow: 1;
 }
