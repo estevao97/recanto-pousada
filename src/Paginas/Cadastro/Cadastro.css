@@ -64,5 +64,13 @@ div#root {
   flex-wrap: wrap;
   max-width: 90%;
   flex-grow: 1;
-  margin: 1% !important;
+  margin-left: 2% !important;
+  color: #f3cf7a;
+}
+.numero {
+  width: 20% !important;
+  margin-left: 2% !important;
+}
+.menu {
+  background-color: #f3cf7a !important;
 }

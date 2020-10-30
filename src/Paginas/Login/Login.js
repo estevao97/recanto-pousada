@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import TextField from "@material-ui/core/TextField";
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 import Button from "../../Components/Button/Button";
 import "./Login.css";
 
@@ -41,6 +41,11 @@ function Login() {
         <h1>Seja bem vindo</h1>
         <div className="linha">
           <CssTextField
+            InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
             type="email"
             className="email"
             label="Email"
@@ -51,6 +56,11 @@ function Login() {
         </div>
         <div className="linha">
           <CssTextField
+            InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
             type="password"
             className="senha"
             label="Senha"
