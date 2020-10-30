@@ -1,9 +1,9 @@
 import React from "react";
-import "../../App.css";
+import "../App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as Carrossel } from "react-responsive-carousel";
 import "./HeroSection.css";
-import Maps from "../Maps/Maps";
+import Maps from "../components/Maps/Maps";
 
 function HeroSection() {
   return (
