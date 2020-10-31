@@ -1,4 +1,4 @@
-export const est = [
+const est = [
   { label: "AC", value: "Acre" },
   { label: "AL", value: "Alagoas" },
   { label: "AP", value: "Amapá" },
@@ -27,3 +27,4 @@ export const est = [
   { label: "SE", value: "Sergipe" },
   { label: "TO", value: "Tocantins" },
 ];
+export default est;

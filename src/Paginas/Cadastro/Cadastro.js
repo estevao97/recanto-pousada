@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { withStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import Button from "../../Components/Button/Button";
-import est from "./Estados";
+import est from "./Estados.js";
 import "./Cadastro.css";
 
-const estados = { est };
+const _estados = est;
 
 const CssTextField = withStyles({
   root: {
@@ -30,14 +30,8 @@ const CssTextField = withStyles({
   },
 })(TextField);
 
-const styles = (theme) => ({
-  multilineColor: {
-    color: "red",
-  },
-});
-
 function Cadastro() {
-  const [estado, setEstado] = React.useState("BR");
+  const [estado, setEstado] = useState();
 
   const handleChange = (event) => {
     setEstado(event.target.value);
@@ -122,7 +116,7 @@ function Cadastro() {
             value={estado}
             onChange={handleChange}
           >
-            {estados.map((option) => (
+            {_estados.map((option) => (
               <MenuItem
                 InputLabelProps={{
                   style: {
@@ -133,7 +127,7 @@ function Cadastro() {
                 key={option.value}
                 value={option.value}
               >
-                {option.label}
+                {option.value}
               </MenuItem>
             ))}
           </CssTextField>
