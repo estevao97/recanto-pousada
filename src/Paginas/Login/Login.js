@@ -1,9 +1,9 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 import "./Login.css";
-import "../../components/HeroSection/HeroSection.css";
-import "../../components/Navbar/Navbar.css";
-import { Button } from "../../components/Button/Button.js";
+import "../../Components/HeroSection/HeroSection.css";
+import "../../Components/Navbar/Navbar.css";
+import { Button } from "../../Components/Button/Button.js";
 
 function Login() {
   return (
