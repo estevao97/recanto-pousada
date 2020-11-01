@@ -14,7 +14,7 @@ div#root {
 .Base {
   background: rgb(255, 248, 205) center center/cover no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
-  height: 90vh;
+  height: 80vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,11 +22,45 @@ div#root {
 }
 
 .Dados {
-  background: white;
-  border-radius: 10px;
+  background: #a4543e;
+  border-radius: 0;
   padding: 15px;
-  width: 250vw;
-  height: 8vw;
-  margin: auto;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.538);
+  width: 30vw;
+  height: 41vw;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.538);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  max-height: 800px;
+  flex-grow: 1;
+}
+
+.imagem {
+  margin-right: auto;
+  width: 29vw;
+  top: -20vh;
+  position: relative;
+}
+.foto > h1 {
+  font: normal 20pt Sansita Swashed;
+  font-size: 3vw;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.607) 2px 2px 2px;
+  text-align: center;
+}
+.Reservas {
+  background: rgba(172, 72, 33, 0.607);
+  border-radius: 15px;
+  padding: 15px;
+  width: 97vw;
+  height: 5vw;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.538);
+}
+
+@media screen and (max-width: 600px) {
+  .Dados {
+    height: 40vh;
+  }
 }
