@@ -12,8 +12,7 @@ div#root {
 }
 
 .base-login {
-  background: rgb(255, 248, 205) center center/cover no-repeat;
-  box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
+  background: #f3cf7a;
   height: 90vh;
   display: flex;
   align-items: center;

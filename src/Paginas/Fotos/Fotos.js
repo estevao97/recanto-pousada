@@ -1,61 +1,45 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-import GridListTileBar from "@material-ui/core/GridListTileBar";
-import ListSubheader from "@material-ui/core/ListSubheader";
-import photos from "./Photos";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    backgroundColor: "#f3cf7a",
-  },
-  gridList: {
-    width: "90%",
-    height: "50%",
-    backgroundColor: "#6e3b3b",
-  },
-  title: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    font: "normal 35pt Sansita Swashed",
-    fontSize: "4vw",
-    color: "#ffffff",
-    textShadow: "rgba(0, 0, 0, 0.589) 2px 2px 2px",
-    margin: "2%",
-    width: "90%",
-    height: "50%",
-    flexGrow: "1",
-  },
-}));
+import React, { useState, useCallback } from "react";
+import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
+import { photos } from "./photos";
+import "./Fotos.css";
 
 function Fotos() {
-  const classes = useStyles();
-  const fotos = photos;
+  const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
 
   return (
-    <div className={classes.root}>
-      <GridList cellHeight={400} spacing={40} className={classes.gridList}>
-        <ListSubheader className={classes.title} component="div">
-          Recanto de Minas
-        </ListSubheader>
-
-        {fotos.map((foto) => (
-          <GridListTile key={foto.title}>
-            <img src={foto.src} alt={foto.title} />
-            <GridListTileBar
-              title={foto.title}
-              subtitle={<span>by: {foto.author}</span>}
-            />
-          </GridListTile>
-        ))}
-      </GridList>
+    <div className="base-fotos">
+      <div className="grid-fotos">
+        <h1>Recanto de Minas</h1>
+        <Gallery photos={photos} onClick={openLightbox} />
+        <ModalGateway>
+          {viewerIsOpen ? (
+            <Modal onClose={closeLightbox}>
+              <Carousel
+                currentIndex={currentImage}
+                views={photos.map((x) => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title,
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
+      </div>
     </div>
   );
 }
+
 export default Fotos;
