@@ -21,7 +21,7 @@ function Fotos() {
   return (
     <div className="base-fotos">
       <div className="grid-fotos">
-        <h1>Recanto de Minas</h1>
+        <h1>Conheça um pouco do nosso recanto</h1>
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>
           {viewerIsOpen ? (

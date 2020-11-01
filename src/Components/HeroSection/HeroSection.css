@@ -72,6 +72,6 @@
 .Logo {
   float: right;
   width: 400px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.538);
+  box-shadow: 3px 3px 3px rgba(41, 36, 36, 0.538);
   margin: 30px;
 }

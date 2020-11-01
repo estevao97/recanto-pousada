@@ -12,7 +12,7 @@ div#root {
 }
 
 .base-fotos {
-  background: #6e3b3b;
+  background: #a4543e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,6 +33,6 @@ div#root {
   text-align: center;
   font-size: 4vw;
   color: #ffffff;
-  text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
+  text-shadow: rgba(0, 0, 0, 0.607) 2px 2px 2px;
   margin: 2%;
 }

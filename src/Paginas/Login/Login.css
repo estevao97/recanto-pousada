@@ -12,7 +12,7 @@ div#root {
 }
 
 .base-login {
-  background: #f3cf7a;
+  background: rgb(255, 248, 205) center center/cover no-repeat;
   height: 90vh;
   display: flex;
   align-items: center;

@@ -14,7 +14,7 @@ div#root {
 
 .base-cadastro {
   display: flex;
-  background: #f3cf7a;
+  background: rgb(255, 248, 205) center center/cover no-repeat;
   height: 42.2vw;
   align-items: center;
   justify-content: center;
@@ -26,6 +26,7 @@ div#root {
   align-items: center;
   justify-items: center;
   background: #6e3b3b;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.538);
   border-radius: 6%;
   padding: 1%;
   width: 40%;
