@@ -89,9 +89,9 @@ export const photos = [
   },
   {
     src:
-      "https://initiate.alphacoders.com/images/422/cropped-3840-1080-422723.jpg?3790",
-    width: 4927,
-    height: 1000,
+      "https://images.pexels.com/photos/87812/pexels-photo-87812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    width: 3000,
+    height: 900,
     title: "Pôr do sol",
     author: "Equipe-6",
   },
