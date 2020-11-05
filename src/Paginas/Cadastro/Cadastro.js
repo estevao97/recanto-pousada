@@ -127,7 +127,7 @@ function Cadastro() {
                 key={option.value}
                 value={option.value}
               >
-                {option.value}
+                {option.label}
               </MenuItem>
             ))}
           </CssTextField>

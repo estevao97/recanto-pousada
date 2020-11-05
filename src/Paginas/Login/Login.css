@@ -25,7 +25,6 @@ div#root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
   background: #6e3b3b;
   border-radius: 6%;
   padding: 1%;
@@ -40,6 +39,7 @@ div#root {
   text-align: center;
   font-size: 4vw;
   color: #ffffff;
+  height: 15%;
   text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
 }
 .linha {
@@ -80,8 +80,41 @@ div#root {
   margin: 2%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+  .base-login {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
   .forms-login {
-    height: 40vh;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0%;
+    box-shadow: none;
+  }
+  .forms-login > h1 {
+    font-size: 8vw;
+    max-height: 20vh;
+    flex-grow: 2;
+  }
+  .linha {
+    height: 12%;
+    margin: 2%;
+  }
+  .email,
+  .senha {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    flex-grow: 1;
+    margin: 2%;
+  }
+
+  .link-cadastro {
+    font-size: 3vw;
   }
 }
