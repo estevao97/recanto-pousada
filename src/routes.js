@@ -6,6 +6,7 @@ import Home from "./Paginas/Home/Home";
 import Fotos from "./Paginas/Fotos/Fotos";
 import Login from "./Paginas/Login";
 import Perfil from "./Paginas/Perfil/Perfil";
+import Historia from "./Paginas/Historia/Historia";
 
 function Routes() {
   return (
@@ -17,6 +18,7 @@ function Routes() {
         <Route path="/cadastro" exact component={Cadastro} />
         <Route path="/fotos" exact component={Fotos} />
         <Route path="/" exact component={Home} />
+        <Route path="/historia"exact component={Historia} />
       </Switch>
     </BrowserRouter>
   );
