@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(255, 248, 205);
+}
+
+.testinho{
+    display: flex;
+  justify-content: center;
+  font: normal 40pt Sansita Swashed;
+  text-align: center;
+  font-size: 3vw;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
+}
+
+.imagem1{
+    position: relative;
+    top: 60px;
+    left: 150px;
+    width: 25%;
+    height: 25%;
+    border-radius: 5%; 
+    
+}
+.imagem2{
+    position: relative;
+    top: 200px;
+    left: 150px;
+    width: 25%;
+    height: 25%;
+    border-radius: 5%; 
+    
+}
+.imagem3{
+    position: relative;
+    top: 330px;
+    left: 150px;
+    width: 25%;
+    height: 25%;  
+    border-radius: 5%; 
+}
+.imagem4{
+    position: relative;
+    top: -350px;
+    left: 900px;
+    width: 25%;
+    height: 25%;   
+    border-radius: 5%;  
+}
+.imagem5{
+    position: relative;
+    top: -1000px;
+    left: 900px;
+    width: 30%;
+    height: 30%;     
+    border-radius: 5%; 
+}
+.imagem6{
+    position: relative;
+    top: -475px;
+    left: 900px;
+    width: 27%;
+    height: 27%;    
+    border-radius: 5%; 
+}
+.bungjump{
+    font: normal 40pt Sansita Swashed;
+    font-size: 1vw;
+    position: relative;
+    top: -1280px;
+    left: 180px;
+    color: #ac3f21;
+    
+   
+    
+
+};
