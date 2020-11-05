@@ -29,7 +29,7 @@ function Historia() {
       <div className="teste">
         <img
           className="imagem1"
-          src="https://images.pexels.com/photos/889855/pexels-photo-889855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          src="https://images.pexels.com/photos/849384/pexels-photo-849384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940s"
           alt="Aqui uma foto da pousada"
         />
       </div>

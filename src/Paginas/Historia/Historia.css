@@ -3,7 +3,7 @@
 }
 html,
 body {
-  background: rgb(255, 248, 205);
+  background: #a4543e;
   box-shadow: inset 0 0 0 1000px rgba(172, 72, 33, 0.607);
   height: auto;
   width: auto;
@@ -14,8 +14,8 @@ div#root {
 }
 
 .base-historia {
-  background: rgb(255, 248, 205);
-  box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
+  background: #a4543e;
+  box-shadow: inset 0 0 0 1000px #a4543e;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@ div#root {
 .base-historia > h1 {
   font: normal 80pt Sansita Swashed;
   font-size: 3.5vw;
-  color: rgb(77, 29, 29);
+  color: rgb(255, 255, 255);
   margin-top: top;
   text-shadow: rgba(0, 0, 0, 0.593) 1px 1px 2px;
   padding: 0%;
@@ -42,11 +42,11 @@ div#root {
 }
 
 .base-historia > h2 {
-  color: #6e3b3b;
+  color: #fdfdfd;
   font: normal 25pt Roboto;
   font-size: 1.5vw;
   position: relative;
-  top: 700px;
+  top: 800px;
   left: -40px;
   width: 90%;
   height: 90%;
@@ -68,7 +68,7 @@ div#root {
 .imagem2 {
   background: rgb(255, 248, 205);
   position: relative;
-  top: -350px;
+  top: -420px;
   left: 50px;
   width: 25%;
   height: 25%;
