@@ -1,0 +1,106 @@
+.quarto-casal {
+    background: rgb(255, 248, 205) center center/cover no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
+    object-fit: contain;
+  }
+  .quarto-solteiro {
+    background: rgb(255, 248, 205) center center/cover no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
+    object-fit: contain;
+  }
+  .quarto-familia {
+    background: rgb(255, 248, 205) center center/cover no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
+    object-fit: contain;
+  }
+  .quarto-casal > h1 {
+    font: normal 40pt Sansita Swashed;
+    color: rgb(77, 29, 29);
+    margin-top: top;
+    text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
+  }
+  .quarto-solteiro > h1 {
+    font: normal 40pt Sansita Swashed;
+    color: rgb(77, 29, 29);
+    margin-top: top;
+    text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
+  }
+  .quarto-familia > h1 {
+    font: normal 40pt Sansita Swashed;
+    color: rgb(77, 29, 29);
+    margin-top: top;
+    text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
+  }
+  .quarto-casal > p {
+    font-family: "Roboto", "Sansita Swashed", "Ubuntu", sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    color: rgb(44, 24, 24);
+    font-size: 32px;
+  }
+  .quarto-solteiro > p {
+    font-family: "Roboto", "Sansita Swashed", "Ubuntu", sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    color: rgb(44, 24, 24);
+    font-size: 32px;
+  }
+  .quarto-familia > p {
+    font-family: "Roboto", "Sansita Swashed", "Ubuntu", sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    color: rgb(44, 24, 24);
+    font-size: 32px;
+  }
+  
+  .quarto-casal > p {
+    font-size: 30px;
+  }
+  .quarto-solteiro > p {
+    font-size: 30px;
+  }
+  .quarto-familia > p {
+    font-size: 30px;
+  }
+  
+  .Imagens {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    position: relative;
+  }
+  
+  .fundo {
+    background: rgb(255, 248, 205) center center/cover no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
+    display: flex;
+    justify-content: center;
+  }
+  .descricao {
+    background: rgba(172, 72, 33, 0.607) center center/cover no-repeat;
+    text-align: center;
+    font: normal 25pt Sansita Swashed;
+    color: rgb(43, 12, 12);
+    text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
+    width: 1500px;
+    height: 150px;
+  }
+  

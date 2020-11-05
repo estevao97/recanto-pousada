@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar.js";
+import Quarto from "./Components/Quartos/Quarto";
 import Cadastro from "./Paginas/Cadastro/Cadastro.js";
 import Home from "./Paginas/Home/Home";
 import Fotos from "./Paginas/Fotos/Fotos";
@@ -17,6 +18,7 @@ function Routes() {
         <Route path="/cadastro" exact component={Cadastro} />
         <Route path="/fotos" exact component={Fotos} />
         <Route path="/" exact component={Home} />
+        <Route path="/quartos" exact component={Quarto} />
       </Switch>
     </BrowserRouter>
   );
