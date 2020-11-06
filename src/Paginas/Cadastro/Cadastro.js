@@ -48,6 +48,11 @@ function Cadastro() {
                 color: "white",
               },
             }}
+            InputProps={{
+              style: {
+                color: "white",
+              },
+            }}
             className="dados"
             label="Nome"
             variant="outlined"
@@ -55,6 +60,11 @@ function Cadastro() {
           />
           <CssTextField
             InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
+            InputProps={{
               style: {
                 color: "white",
               },
@@ -72,6 +82,11 @@ function Cadastro() {
                 color: "white",
               },
             }}
+            InputProps={{
+              style: {
+                color: "white",
+              },
+            }}
             className="dados"
             label="Rua"
             variant="outlined"
@@ -79,6 +94,11 @@ function Cadastro() {
           />
           <CssTextField
             InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
+            InputProps={{
               style: {
                 color: "white",
               },
@@ -96,6 +116,11 @@ function Cadastro() {
                 color: "white",
               },
             }}
+            InputProps={{
+              style: {
+                color: "white",
+              },
+            }}
             className="dados"
             label="Cidade"
             variant="outlined"
@@ -104,6 +129,11 @@ function Cadastro() {
 
           <CssTextField
             InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
+            InputProps={{
               style: {
                 color: "white",
               },
@@ -119,6 +149,11 @@ function Cadastro() {
             {_estados.map((option) => (
               <MenuItem
                 InputLabelProps={{
+                  style: {
+                    color: "white",
+                  },
+                }}
+                InputProps={{
                   style: {
                     color: "white",
                   },
@@ -139,6 +174,11 @@ function Cadastro() {
                 color: "white",
               },
             }}
+            InputProps={{
+              style: {
+                color: "white",
+              },
+            }}
             className="dados"
             label="Email"
             variant="outlined"
@@ -148,6 +188,11 @@ function Cadastro() {
         <div className="linha-unica">
           <CssTextField
             InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
+            InputProps={{
               style: {
                 color: "white",
               },
@@ -162,7 +207,7 @@ function Cadastro() {
         <div className="linha-unica">
           {Button && (
             <Button className="btn-teste" buttonStyle="btn--outline">
-              CONCLUIR REGISTRO
+              REGISTRAR
             </Button>
           )}
         </div>

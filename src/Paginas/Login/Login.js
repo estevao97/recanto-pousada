@@ -46,6 +46,11 @@ function Login() {
                 color: "white",
               },
             }}
+            InputProps={{
+              style: {
+                color: "white",
+              },
+            }}
             type="email"
             className="email"
             label="Email"
@@ -57,6 +62,11 @@ function Login() {
         <div className="linha">
           <CssTextField
             InputLabelProps={{
+              style: {
+                color: "white",
+              },
+            }}
+            InputProps={{
               style: {
                 color: "white",
               },
