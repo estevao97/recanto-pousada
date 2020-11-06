@@ -3,6 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import TextField from "@material-ui/core/TextField";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "../../Components/Button/Button";
+import Footer from "../../Components/Footer/Footer";
 import "./Login.css";
 
 const CssTextField = withStyles({
@@ -36,65 +37,68 @@ function Login() {
   }
 
   return (
-    <div className="base-login">
-      <div className="forms-login">
-        <h1>Seja bem vindo</h1>
-        <div className="linha">
-          <CssTextField
-            InputLabelProps={{
-              style: {
-                color: "white",
-              },
-            }}
-            InputProps={{
-              style: {
-                color: "white",
-              },
-            }}
-            type="email"
-            className="email"
-            label="Email"
-            variant="outlined"
-            id="email"
-            onClick={login()}
-          />
-        </div>
-        <div className="linha">
-          <CssTextField
-            InputLabelProps={{
-              style: {
-                color: "white",
-              },
-            }}
-            InputProps={{
-              style: {
-                color: "white",
-              },
-            }}
-            type="password"
-            className="senha"
-            label="Senha"
-            variant="outlined"
-            id="senha"
-            onClick={login()}
-          />
-        </div>
-        <Link className="link-cadastro" to="cadastro">
-          Não é cadastrado? Crie sua conta.
-        </Link>
-        <div className="btn-login">
-          {Button && (
-            <Button
-              buttonStyle="btn--outline"
-              onClick={() => {
-                login();
+    <div>
+      <div className="base-login">
+        <div className="forms-login">
+          <h1>Seja bem vindo</h1>
+          <div className="linha">
+            <CssTextField
+              InputLabelProps={{
+                style: {
+                  color: "white",
+                },
               }}
-            >
-              Login
-            </Button>
-          )}
+              InputProps={{
+                style: {
+                  color: "white",
+                },
+              }}
+              type="email"
+              className="email"
+              label="Email"
+              variant="outlined"
+              id="email"
+              onClick={login()}
+            />
+          </div>
+          <div className="linha">
+            <CssTextField
+              InputLabelProps={{
+                style: {
+                  color: "white",
+                },
+              }}
+              InputProps={{
+                style: {
+                  color: "white",
+                },
+              }}
+              type="password"
+              className="senha"
+              label="Senha"
+              variant="outlined"
+              id="senha"
+              onClick={login()}
+            />
+          </div>
+          <Link className="link-cadastro" to="cadastro">
+            Não é cadastrado? Crie sua conta.
+          </Link>
+          <div className="btn-login">
+            {Button && (
+              <Button
+                buttonStyle="btn--outline"
+                onClick={() => {
+                  login();
+                }}
+              >
+                Login
+              </Button>
+            )}
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
