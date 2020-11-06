@@ -1,28 +1,26 @@
 .rodape {
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  max-height: 5%;
-  flex-grow: 1;
+  max-height: 20%;
 }
-.Logo {
+.Logo-footer {
   float: left;
-  width: 10%;
-  max-height: 5%;
-  box-shadow: 3px 3px 3px rgba(41, 36, 36, 0.538);
-  margin: 30px;
+  width: 8%;
+  margin: 0%;
 }
 .contatos,
 .redes {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
+  max-height: 100%;
 }
 .contatos > h3,
 .redes > h3 {
-  font: normal 40pt Sansita Swashed;
+  font: normal 40pt Roboto;
   text-align: left;
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #ffffff;
 }

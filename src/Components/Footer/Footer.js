@@ -5,7 +5,12 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="rodape">
-      <img className="Logo" src={Logo} alt="Logo" />
+      <img
+        className="Logo-footer
+      "
+        src={Logo}
+        alt="Logo"
+      />
       <div className="contatos">
         <h3>Email: recantodeminas@gmail.com</h3>
         <h3>Telefone: (31) 3141-5926</h3>
