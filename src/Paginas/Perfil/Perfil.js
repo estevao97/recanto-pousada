@@ -1,6 +1,7 @@
 import React from "react";
 import "./Perfil.css";
 import imgPerfil from "../../images/perfil.svg";
+import Footer from "../../Components/Footer/Footer";
 
 function Perfil() {
   return (
@@ -13,6 +14,7 @@ function Perfil() {
       </div>
       <div className="Reservas">Quarto de casal alugado em: 02/03/2019</div>
       <div className="Base"></div>
+      <Footer />
     </div>
   );
 }

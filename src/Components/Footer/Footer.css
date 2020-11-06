@@ -4,6 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   max-height: 20%;
+  background-color: rgb(77, 29, 29);
 }
 .Logo-footer {
   float: left;

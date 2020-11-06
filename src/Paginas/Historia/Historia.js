@@ -1,5 +1,6 @@
 import React from "react";
 import "./Historia.css";
+import Footer from "../../Components/Footer/Footer";
 
 function Historia() {
   return (
@@ -41,6 +42,7 @@ function Historia() {
           alt="Aqui uma foto da pousada"
         />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -13,6 +13,7 @@ import "./Quarto.css";
 import QuartoCasal from "./QuartoCasal";
 import QuartoFamilia from "./QuartoFamilia";
 import QuartoSolteiro from "./QuartoSolteiro";
+import Footer from "../../Components/Footer/Footer";
 
 function Quarto() {
   return (
@@ -20,11 +21,9 @@ function Quarto() {
       <QuartoCasal />
       <QuartoSolteiro />
       <QuartoFamilia />
+      <Footer />
     </>
   );
 }
 
 export default Quarto;
-
-
-
