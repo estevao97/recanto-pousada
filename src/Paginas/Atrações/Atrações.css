@@ -5,99 +5,165 @@ body {
 .testinho {
   display: flex;
   justify-content: center;
-  font: normal 40pt Sansita Swashed;
+  font: normal 40pt sansita swashed;
   text-align: center;
-  font-size: 3vw;
-  color: #ffffff;
+  font-size: 5vw;
+  color: #6e3b3b;
   text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
-
 }
 .thumb {
-    background-color: #6e3b3b;
-    display: flex;
-    
-  }
-  
+  background-color: #6e3b3b;
+  display: flex;
+  width: 80%;
+  position: absolute;
+  left: 9%;
+  top: 25%;
+  margin: 2px;
+  border: 20px double #ffffff;
+}
+
 .coluna1 {
-    flex: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  margin-top: 20px;
-  }
-  .coluna2 {
-    flex: 50%;
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
- margin-top: 20px;
-  }
+  flex: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.coluna2 {
+  flex: 80%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 40px;
+}
 
 .imagem1 {
   position: relative;
-  width: 50%;
+  width: 80%;
 
   border-radius: 5%;
-  margin-bottom: ;
+  margin-bottom: 10px;
 }
 .imagem2 {
   position: relative;
-  width: 50%;
-
+  width: 80%;
   border-radius: 5%;
+  margin-bottom: 10px;
 }
 .imagem3 {
   position: relative;
-
-  width: 50%;
-
+  width: 80%;
   border-radius: 5%;
+  margin-bottom: 10px;
 }
 .imagem4 {
   position: relative;
-
-  width: 50%;
-
+  width: 80%;
   border-radius: 5%;
+  margin-bottom: 10px;
 }
 .imagem5 {
   position: relative;
-
-  width: 55%;
-
+  width: 80%;
   border-radius: 5%;
+  margin-bottom: 10px;
 }
 .imagem6 {
   position: relative;
-
-  width: 50%;
-
+  width: 80%;
   border-radius: 5%;
+  margin-bottom: 10px;
 }
 .bungjump {
-  width: 50%;
-  font: normal 40pt Sansita Swashed;
+  width: 80%;
+  font: normal 40pt Roboto;
   font-size: 1vw;
   position: relative;
 
   color: #ffffff;
-border-radius: 2%;
+  border-radius: 2%;
   padding: 5px;
   border: 5px double #ffffff;
 }
+.texto2{
+  width: 80%;
+  font: normal 40pt Roboto;
+  font-size: 1vw;
+  position: relative;
+
+  color: #ffffff;
+  border-radius: 2%;
+  padding: 5px;
+  border: 5px double #ffffff;
+}
+.texto3{
+  width: 80%;
+  font: normal 40pt Roboto;
+  font-size: 1vw;
+  position: relative;
+
+  color: #ffffff;
+  border-radius: 2%;
+  padding: 5px;
+  border: 5px double #ffffff;
+}
+.texto4{
+  width: 80%;
+  font: normal 40pt Roboto;
+  font-size: 1vw;
+  position: relative;
+
+  color: #ffffff;
+  border-radius: 2%;
+  padding: 5px;
+  border: 5px double #ffffff;
+}
+.texto5{
+  width: 80%;
+  font: normal 40pt Roboto;
+  font-size: 1vw;
+  position: relative;
+
+  color: #ffffff;
+  border-radius: 2%;
+  padding: 5px;
+  border: 5px double #ffffff;
+}
+
+.cardatracao > h3{
+  display: flex;
+  justify-content: center;
+  font: normal 40pt sansita swashed;
+  text-align: center;
+  font-size: 2.5vw;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
+}
+.texto6{
+  width: 80%;
+  font: normal 40pt Roboto;
+  font-size: 1vw;
+  position: relative;
+
+  color: #ffffff;
+  border-radius: 2%;
+  padding: 5px;
+  border: 5px double #ffffff;
+}
+
 
 
 .container-atracoes {
   display: flex;
   flex-direction: column;
 }
-.cardatracao{
-margin: 20px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-    
+
+.cardatracao {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
