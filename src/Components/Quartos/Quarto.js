@@ -6,7 +6,7 @@ Colocar preço
 Botões redirecionando para o cadastro
 Hero section de base
 */
-
+//dflex para colocar a descrição do lado do carrossel
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Quarto.css";
