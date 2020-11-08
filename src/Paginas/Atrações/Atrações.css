@@ -1,5 +1,14 @@
+* {
+  box-sizing: unset;
+}
+html,
 body {
-  background-color: rgb(255, 248, 205);
+  height: auto;
+  width: auto;
+}
+div#root {
+  height: auto;
+  width: auto;
 }
 
 .testinho {
@@ -87,7 +96,7 @@ body {
   padding: 5px;
   border: 5px double #ffffff;
 }
-.texto2{
+.texto2 {
   width: 80%;
   font: normal 40pt Roboto;
   font-size: 1vw;
@@ -98,7 +107,7 @@ body {
   padding: 5px;
   border: 5px double #ffffff;
 }
-.texto3{
+.texto3 {
   width: 80%;
   font: normal 40pt Roboto;
   font-size: 1vw;
@@ -109,7 +118,7 @@ body {
   padding: 5px;
   border: 5px double #ffffff;
 }
-.texto4{
+.texto4 {
   width: 80%;
   font: normal 40pt Roboto;
   font-size: 1vw;
@@ -120,7 +129,7 @@ body {
   padding: 5px;
   border: 5px double #ffffff;
 }
-.texto5{
+.texto5 {
   width: 80%;
   font: normal 40pt Roboto;
   font-size: 1vw;
@@ -132,7 +141,7 @@ body {
   border: 5px double #ffffff;
 }
 
-.cardatracao > h3{
+.cardatracao > h3 {
   display: flex;
   justify-content: center;
   font: normal 40pt sansita swashed;
@@ -141,7 +150,7 @@ body {
   color: #ffffff;
   text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
 }
-.texto6{
+.texto6 {
   width: 80%;
   font: normal 40pt Roboto;
   font-size: 1vw;
@@ -152,8 +161,6 @@ body {
   padding: 5px;
   border: 5px double #ffffff;
 }
-
-
 
 .container-atracoes {
   display: flex;

@@ -1,0 +1,17 @@
+.cliente {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+  min-height: Calc(100vh - 130px - 70px);
+  width: 24vw;
+  background-color: #a4543e;
+  display: inline-block;
+}
+
+.cliente > h1 {
+  font: normal 30pt Sansita Swashed;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.607) 2px 2px 2px;
+  margin: 2%;
+}
