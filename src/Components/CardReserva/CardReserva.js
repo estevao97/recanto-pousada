@@ -9,6 +9,11 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    borderRadius: 2,
+    transition: "0.2s",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
   },
 });
 
