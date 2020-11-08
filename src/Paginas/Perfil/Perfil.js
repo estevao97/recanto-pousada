@@ -8,11 +8,9 @@ function Perfil() {
   return (
     <div>
       <div className="BasePerfil">
-        <Usuario
-          nome="Miguel Scatolin"
-          cpf="123.456.789-10"
-          cidade="VN cabuloso"
-        />
+        <div className="user">
+          <Usuario nome="Miguel Scatolin" />
+        </div>
 
         <div className="Grade">
           <CardReserva

@@ -14,6 +14,7 @@ div#root {
   display: flex;
   min-height: Calc(100vh - 130px - 70px);
   background: rgb(255, 248, 205) center center/cover no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
   position: relative;
 }
 .Grade {
@@ -21,4 +22,7 @@ div#root {
   grid-gap: 16px;
   display: inline-grid;
   padding: 48px;
+}
+.user {
+  padding-top: 48px;
 }

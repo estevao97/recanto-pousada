@@ -3,10 +3,11 @@ import "./Usuario.css";
 
 function Usuario(props) {
   return (
-    <div className="cliente">
-      <h1>{props.nome}</h1>
-      <p> {props.cpf}</p>
-      <p> {props.cidade}</p>
+    <div className="capa">
+      <div className="cliente">
+        <h1>Ei {props.nome}!</h1>
+        <h2>Reveja seus ótimos momentos com a gente</h2>
+      </div>
     </div>
   );
 }

@@ -1,17 +1,30 @@
 .cliente {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 50px;
-  min-height: Calc(100vh - 130px - 70px);
+  justify-content: stretch;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  min-height: Calc(40vh - 130px - 70px);
   width: 24vw;
   background-color: #a4543e;
   display: inline-block;
+  text-align: center;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.483) 2px 2px 2px;
 }
 
 .cliente > h1 {
-  font: normal 30pt Sansita Swashed;
+  font: normal 25pt Sansita Swashed;
   color: #ffffff;
   text-shadow: rgba(0, 0, 0, 0.607) 2px 2px 2px;
   margin: 2%;
+}
+
+.cliente > h2 {
+  font: normal 18pt Roboto;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px;
+  margin: 2%;
+  padding-top: 20px;
 }
