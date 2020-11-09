@@ -26,3 +26,6 @@ div#root {
 .user {
   padding-top: 48px;
 }
+.grid-links {
+  text-decoration: none;
+}
