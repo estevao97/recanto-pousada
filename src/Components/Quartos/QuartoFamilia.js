@@ -27,8 +27,8 @@ function QuartoFamilia() {
           </div>
         </Carrossel>
       </div>
-       <div className="descrição-quartos"><br/>Traga já sua família para aproveitar o melhor que uma pousada pode oferecer. Nossos quartos família são ampplos, confortáveis, e uma excelente opcão para uma 
-       estadia de qualidade na melhor pousada de Minas Gerais.<br/></div>
+       <div className="descrição-quartos"><br/><h1>Traga já sua família para aproveitar o melhor que uma pousada pode oferecer. Nossos quartos família são amplos, confortáveis, e uma excelente opcão para uma 
+       estadia de qualidade na melhor pousada de Minas Gerais.</h1><br/></div>
     </div>
     
   </div>

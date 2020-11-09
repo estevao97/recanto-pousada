@@ -26,8 +26,8 @@ function QuartoCasal() {
             </div>
           </Carrossel>
         </div>
-        <div className="descrição-quartos"><br/>Nossos quartos casal possuem a melhor infraestrutura para receber você e seu cônjuge com todo o respeito e privacidade necessários. Venha já ter sua melhor
-        experiência e melhor estadia que uma pousada pode oferecer.<br/></div>
+        <div className="descrição-quartos"><br/><h1>Nossos quartos casal possuem a melhor infraestrutura para receber você e seu cônjuge com todo o respeito e privacidade necessários. Venha já ter sua melhor
+        experiência e melhor estadia que uma pousada pode oferecer.</h1><br/></div>
       </div>
       
       </div>

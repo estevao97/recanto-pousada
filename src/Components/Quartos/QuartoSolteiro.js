@@ -26,8 +26,8 @@ function QuartoSolteiro() {
             </div>
           </Carrossel>
         </div>
-        <div className="descrição-quartos"><br/>Nossos quartos de solteiro apresentam o melhor conforto e as melhores instalações que você e seus amigos merecem. Venha já passar maravilhoso momentos no Recanto da
-        Pousada.<br/></div>
+        <div className="descrição-quartos"><br/><h1>Nossos quartos de solteiro apresentam o melhor conforto e as melhores instalações que você e seus amigos merecem. Venha já passar maravilhoso momentos no Recanto da
+        Pousada.</h1><br/></div>
       </div>
 
       </div>
