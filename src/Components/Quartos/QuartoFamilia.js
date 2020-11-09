@@ -8,15 +8,9 @@ function QuartoFamilia() {
 
     <div className="quarto-familia">
     <h1>Quarto Família</h1>
-    <div className="fundo">
-       <div className="descrição"><br/>O democrata Joe Biden prometeu, neste sábado (7), ser "o presidente para todos os americanos", depois que as redes dos EUA projetaram sua vitória contra o republicano Donald Trump.
-
-"O trabalho que temos pela frente será difícil, mas eu prometo a vocês: serei um presidente para todos os americanos, quer tenha votado em mim ou não", disse o ex-vice-presidente de 77 anos no Twitter.
-
-"Com o fim da campanha, é hora de deixar para trás a raiva e a retórica dura e nos unirmos como uma nação", declarou em outra declaração.
-
-"É hora da América se unir. E se curar".<br/></div>
-      <div className="Imagens">
+    <div className="fundo-quartos">
+      
+      <div className="Imagens-quartos">
         <Carrossel showArrows={true} autoPlay={true} infiniteLoop={true}>
           <div>
             <img
@@ -33,8 +27,12 @@ function QuartoFamilia() {
           </div>
         </Carrossel>
       </div>
+       <div className="descrição-quartos"><br/>Traga já sua família para aproveitar o melhor que uma pousada pode oferecer. Nossos quartos família são ampplos, confortáveis, e uma excelente opcão para uma 
+       estadia de qualidade na melhor pousada de Minas Gerais.<br/></div>
     </div>
+    
   </div>
+  
   )
 }
 export default QuartoFamilia;

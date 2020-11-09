@@ -84,27 +84,27 @@
     font-size: 30px;
   }
   
-  .Imagens {
+  .Imagens-quartos {
    max-width: 70%;
   display: table-row;
   position: relative;
     
   }
 
-  .fundo {
+  .fundo-quartos {
     display: flex;
     background: rgb(255, 248, 205) center center/cover no-repeat;
     box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
     
   }
-  .descricao {
+  .descricao-quartos {
     display: flex;
     align-items: center;
     max-width: 20vw;
     flex-wrap: wrap;
-
+ 
   }
-   .descricao > p1 {
+   .descricao-quartos > p1 {
     text-align: center;
     font: normal 25pt Sansita Swashed;
     max-width: 100%;
