@@ -6,7 +6,7 @@ function Usuario(props) {
     <div className="capa">
       <div className="cliente">
         <h1>Ei {props.nome}!</h1>
-        <h2>Reveja seus ótimos momentos com a gente</h2>
+        <h2>Revisite seus ótimos momentos com a gente</h2>
       </div>
     </div>
   );
