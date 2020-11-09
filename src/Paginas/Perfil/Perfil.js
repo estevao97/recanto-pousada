@@ -28,6 +28,11 @@ function Perfil() {
             data="12/03/18"
             image="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
           />
+          <CardReserva
+            titulo="Quarto Casal"
+            data="22/12/19"
+            image="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?cs=srgb&dl=pexels-pixabay-279746.jpg&fm=jpg"
+          />
         </div>
       </div>
       <Footer />

@@ -6,8 +6,7 @@
   padding-bottom: 8px;
   min-height: Calc(40vh - 130px - 70px);
   width: 24vw;
-  background-color: #a4543e;
-  display: inline-block;
+  background-color: rgb(110, 59, 59);
   text-align: center;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
