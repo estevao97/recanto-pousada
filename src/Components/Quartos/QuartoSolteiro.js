@@ -1,6 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as Carrossel } from "react-responsive-carousel";
+import Button from "../../Components/Button/Button";
 import "./Quarto.css";
 
 function QuartoSolteiro() {
@@ -26,8 +27,17 @@ function QuartoSolteiro() {
             </div>
           </Carrossel>
         </div>
-        <div className="descricao-quartos"><br/><p>Nossos quartos de solteiro apresentam o melhor conforto e as melhores instalações que você e seus amigos merecem. Venha já passar maravilhoso momentos no Recanto da
-        Pousada. Apenas R$100 por dia</p><br/></div>
+        <div className="descricao-quartos"><br/><p>Nossos quartos de solteiro apresentam o melhor conforto e as melhores instalações que você e seus amigos merecem. Venha já passar maravilhosos momentos no Recanto da
+        Pousada. Apenas R$100 por dia</p><br/>
+        <div className="btn-quarto">
+            {Button && (
+              <Button
+              >
+                Reserve agora!
+              </Button>
+            )}
+          </div>
+        </div>
       </div>
 
       </div>

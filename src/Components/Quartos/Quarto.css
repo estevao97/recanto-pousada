@@ -120,3 +120,10 @@
    }
 
   }
+  .btn-quarto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 2%;
+}
