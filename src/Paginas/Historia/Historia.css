@@ -3,8 +3,6 @@
 }
 html,
 body {
-  background: #a4543e;
-  box-shadow: inset 0 0 0 1000px rgba(172, 72, 33, 0.607);
   height: auto;
   width: auto;
 }
@@ -12,10 +10,23 @@ div#root {
   height: auto;
   width: auto;
 }
-
-.base-historia {
+.base {
   background: #a4543e;
-  box-shadow: inset 0 0 0 1000px #a4543e;
+}
+
+.title {
+  background-color: #a4543e;
+  font: normal 80pt Sansita Swashed;
+  font-size: 3vw;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 800px;
+  left: 730px;
+  width: 50%;
+  height: 50%;
+}
+.base-historia {
+  background-color: #a4543e;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -25,7 +36,7 @@ div#root {
 
 .base-historia > h1 {
   font: normal 80pt Sansita Swashed;
-  font-size: 3.5vw;
+  font-size: 3vw;
   color: rgb(255, 255, 255);
   margin-top: top;
   text-shadow: rgba(0, 0, 0, 0.593) 1px 1px 2px;
@@ -35,10 +46,10 @@ div#root {
   justify-content: center;
   flex-grow: 1;
   position: relative;
-  top: -250px;
-  left: 475px;
-  width: 50%;
-  height: 50%;
+  top: -300px;
+  left: 330px;
+  width: 200vw;
+  height: 80%;
 }
 
 .base-historia > h2 {
@@ -47,29 +58,110 @@ div#root {
   font-size: 1.5vw;
   position: relative;
   top: 800px;
-  left: -40px;
-  width: 90%;
+  left: -200px;
+  width: 180%;
   height: 90%;
+  text-justify: inter-cluster;
+  text-align: justify;
 }
 
 .imagem1 {
-  background: rgb(255, 248, 205);
-  box-shadow: inset 0 0 0 1000px rgba(240, 216, 161, 0.724);
+  background: #a4543e;
+
+  border-radius: 0;
   position: relative;
-  top: -500px;
+  top: -550px;
   left: 0px;
   width: 100%;
   height: -100%;
 }
-.teste {
-  height: 100%;
-}
 
 .imagem2 {
-  background: rgb(255, 248, 205);
+  background: #a4543e;
   position: relative;
   top: -420px;
-  left: 50px;
+  left: 100px;
   width: 25%;
   height: 25%;
+  border-radius: 0;
+}
+@media screen and (max-width: 900px) {
+  html,
+  body {
+    background: #a4543e;
+    height: auto;
+    width: auto;
+  }
+  div#root {
+    height: auto;
+    width: auto;
+  }
+
+  .title {
+    font: normal 80pt Sansita Swashed;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 700px;
+    left: 40px;
+    width: 50%;
+    height: 50%;
+  }
+  .base-historia {
+    background: #a4543e;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .base-historia > h1 {
+    font: normal 80pt Sansita Swashed;
+    font-size: 3.5vw;
+    color: rgb(255, 255, 255);
+    margin-top: top;
+    text-shadow: rgba(0, 0, 0, 0.593) 1px 1px 2px;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+    top: -300px;
+    left: 200px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .base-historia > h2 {
+    color: #fdfdfd;
+    font: normal 25pt Roboto;
+    font-size: 1.5vw;
+    position: relative;
+    top: 800px;
+    left: -50px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .imagem1 {
+    background: #a4543e;
+
+    border-radius: 0;
+    position: relative;
+    top: -550px;
+    left: 0px;
+    width: 100%;
+    height: -100%;
+  }
+
+  .imagem2 {
+    background: #a4543e;
+    position: relative;
+    top: -420px;
+    left: 50px;
+    width: 25%;
+    height: 25%;
+  }
 }
