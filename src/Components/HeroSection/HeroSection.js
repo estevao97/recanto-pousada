@@ -1,11 +1,11 @@
-import React from "react";
-import "../../App.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel as Carrossel } from "react-responsive-carousel";
-import "./HeroSection.css";
-import Maps from "../Maps/Maps";
-import Logo from "../../images/logo.png";
-import Footer from "../../Components/Footer/Footer";
+import React from 'react';
+import '../../App.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel as Carrossel } from 'react-responsive-carousel';
+import './HeroSection.css';
+import Maps from '../Maps/Maps';
+import Logo from '../../images/logo.png';
+import Footer from '../../Components/Footer/Footer';
 
 function HeroSection() {
   return (
