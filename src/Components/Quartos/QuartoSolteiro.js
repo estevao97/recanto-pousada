@@ -26,8 +26,8 @@ function QuartoSolteiro() {
             </div>
           </Carrossel>
         </div>
-        <div className="descrição-quartos"><br/><h1>Nossos quartos de solteiro apresentam o melhor conforto e as melhores instalações que você e seus amigos merecem. Venha já passar maravilhoso momentos no Recanto da
-        Pousada.</h1><br/></div>
+        <div className="descricao-quartos"><br/><p>Nossos quartos de solteiro apresentam o melhor conforto e as melhores instalações que você e seus amigos merecem. Venha já passar maravilhoso momentos no Recanto da
+        Pousada. Apenas R$100 por dia</p><br/></div>
       </div>
 
       </div>
