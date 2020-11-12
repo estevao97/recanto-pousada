@@ -104,9 +104,6 @@
   color: #ffffff;
   border-radius: 2%;
   padding: 5px;
-  border-width: 6px;
-  border-style: inset;
-  border-color: #fff8cd;
 }
 .texto2 {
   width: 80%;
@@ -117,10 +114,6 @@
   color: #ffffff;
   border-radius: 2%;
   padding: 5px;
-
-  border-width: 6px;
-  border-style: inset;
-  border-color: #fff8cd;
 }
 .texto3 {
   width: 80%;
@@ -224,7 +217,7 @@
   align-items: center;
   flex-direction: column;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 960px) {
   .testinho {
     display: flex;
     justify-content: center;
