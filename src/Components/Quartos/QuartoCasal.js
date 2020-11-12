@@ -1,15 +1,17 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as Carrossel } from "react-responsive-carousel";
+import Button from "../../Components/Button/Button";
 import "./Quarto.css";
 
 function QuartoCasal() {
   return (
-   
+    
     <div className="quarto-casal">
-      <h1>Quartos Casal</h1>
-      <div className="fundo">
-        <div className="Imagens">
+      <h1>Quarto Casal</h1>
+      <div className="fundo-quartos">
+        
+        <div className="Imagens-quartos">
           <Carrossel showArrows={true} autoPlay={true} infiniteLoop={true}>
             <div>
               <img
@@ -25,16 +27,19 @@ function QuartoCasal() {
             </div>
           </Carrossel>
         </div>
+        <div className="descricao-quartos"><br/><p>Nossos quartos casal possuem a melhor infraestrutura para receber você e seu cônjuge com todo o respeito e privacidade necessários. Venha já ter sua melhor
+        experiência e melhor estadia que uma pousada pode oferecer. Apenas R$120 por dia</p><br/>
+        <div className="btn-quarto">
+            {Button && (
+              <Button
+              >
+                Reserve agora!
+              </Button>
+            )}
+          </div>
+        
+        </div>
       </div>
-
-      <div className="descricao">
-        <h2>Quarto Casal</h2>
-      </div>
-      <p>
-        <br />
-        Descrição dos quartos de casal
-      </p>
-      <p>&copy;Equipe6 </p>
       </div>
   )
 }

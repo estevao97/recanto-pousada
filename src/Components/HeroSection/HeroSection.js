@@ -60,7 +60,7 @@ function HeroSection() {
             </Carrossel>
           </div>
         </div>
-        <div className="descricao">
+        <div className="apresentacao">
           <h2>Venha conhecer nossa pousada</h2>
         </div>
 

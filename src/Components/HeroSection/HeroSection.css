@@ -50,7 +50,7 @@
   display: flex;
   justify-content: center;
 }
-.descricao {
+.apresentacao {
   background: rgba(172, 72, 33, 0.607) center center/cover no-repeat;
   text-align: center;
   font: normal 25pt Sansita Swashed;

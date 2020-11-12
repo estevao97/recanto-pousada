@@ -1,6 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as Carrossel } from "react-responsive-carousel";
+import Button from "../../Components/Button/Button";
 import "./Quarto.css";
 
 function QuartoFamilia() {
@@ -8,8 +9,9 @@ function QuartoFamilia() {
 
     <div className="quarto-familia">
     <h1>Quarto Família</h1>
-    <div className="fundo">
-      <div className="Imagens">
+    <div className="fundo-quartos">
+      
+      <div className="Imagens-quartos">
         <Carrossel showArrows={true} autoPlay={true} infiniteLoop={true}>
           <div>
             <img
@@ -26,18 +28,21 @@ function QuartoFamilia() {
           </div>
         </Carrossel>
       </div>
+       <div className="descricao-quartos"><br/><p>Traga já sua família para aproveitar o melhor que uma pousada pode oferecer. Nossos quartos família são amplos, confortáveis, e uma excelente opcão para uma 
+       estadia de qualidade na melhor pousada de Minas Gerais. Apenas R$150 por dia</p><br/>
+       <div className="btn-quarto">
+            {Button && (
+              <Button
+              >
+                Reserve agora!
+              </Button>
+            )}
+          </div>
+       </div>
     </div>
-
-  <div className="descricao">
-      <h2>Quarto Família</h2>
-    </div>
-    <p>
-      <br />
-      Venha com sua família aproveitar o melhor do nosso mais luxuoso quarto. Com uma confortável
-      área de convivência, viva seus melhores momentos por apenas R$ x.
-    </p>
-    <p>&copy;Equipe6 </p>
+    
   </div>
+  
   )
 }
 export default QuartoFamilia;
