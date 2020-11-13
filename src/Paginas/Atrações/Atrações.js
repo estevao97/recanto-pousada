@@ -1,16 +1,15 @@
-import React from "react";
-import "./Atrações.css";
-import Footer from "../../Components/Footer/Footer";
-import CardAtrações from "../../Components/CardAtrações/CardAtrações";
+import React from 'react';
+import './Atrações.css';
+import Footer from '../../Components/Footer/Footer';
+import CardAtrações from '../../Components/CardAtrações/CardAtrações';
 
 function Atrações() {
   return (
     <div className="baseAtrações">
       <h1>Atrações</h1>
-      
-     
-        
-        <div className="coluna1">
+
+      <div className="coluna1">
+        <div className="cartao1">
           <CardAtrações
             title="Tirolesa"
             title2="tirolesa"
@@ -23,7 +22,7 @@ function Atrações() {
 
          "
           />
-          <CardAtrações 
+          <CardAtrações
             title="Bung Jump"
             title2="Bung Jump"
             image="https://images.pexels.com/photos/1486036/pexels-photo-1486036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -55,8 +54,10 @@ function Atrações() {
          "
           />
         </div>
+      </div>
 
-        <div className="coluna2">
+      <div className="coluna2">
+        <div className="cartao2">
           <CardAtrações
             title="Caiaque"
             title2="caiaque"
@@ -99,12 +100,8 @@ function Atrações() {
          "
           />
         </div>
-
       </div>
-      
-   
-    
+    </div>
   );
 }
-
 export default Atrações;

@@ -16,15 +16,9 @@
   flex-grow: 1;
   position: relative;
   top: -110vh;
-  left: 77vh;
+  left: 39vw;
   text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
   font-size: 6vw;
-}
-.cards {
-  display: flex;
-
-  margin-top: 10%;
-  background-color:#a4543e;
 }
 .coluna1 {
   flex: 80%;
@@ -32,13 +26,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
+  margin-top: 24vh;
   position: relative;
   top: -10vh;
-  left: -40vh;
-  background-color: #6e3b3b ;
-  border: 20px double #ffffff;
-  
+  left: -25vh;
+}
+
+.cartao1 {
+  padding-top: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-bottom: 5vh;
+  background-color: #6e3b3b;
+  border: 50vw;
+  border-radius: 15px;
+  margin-top: 24vh;
+  grid-template-columns: 345px;
+  grid-gap: 20px;
+  display: inline-grid;
 }
 
 .coluna2 {
@@ -47,57 +52,67 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
+  margin-top: 24vh;
   position: relative;
-  top: -10vh;
-  left: -6vh;
-  background-color:#6e3b3b;
-  border: 20px double #ffffff;
+  top: -8.5vh;
+  left: -16vh;
 }
-@media screen and (max-width: 960px){
-    .baseAtrações > h1 {
-        font: normal 40pt Sansita Swashed;
-        display: flex;
-        color: #a4543e;
-        height: 10vh;
-        align-items: center;
-        justify-content: center;
-        flex-grow: 1;
-        position: relative;
-        top: -120vh;
-        left: 20vh;
-        text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
-        font-size: 10vw;
-      }
-    
-      .coluna1 {
-        flex: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
-        position: relative;
-        top: -10vh;
-        left: -10vh;
-        background-color: #6e3b3b ;
-        border: 20px double #ffffff;
-        
-      }
-      
-      .coluna2 {
-        flex: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
-        position: relative;
-        top: -100vh;
-        left: -6vh;
-        background-color:#6e3b3b;
-        border: 20px double #ffffff;
-      }
 
+.cartao2 {
+  padding-top: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-bottom: 5vh;
+  background-color: #6e3b3b;
+  border: 50vw;
+  border-radius: 15px;
+  margin-top: 24vh;
+  grid-template-columns: 345px;
+  grid-gap: 20px;
+  display: inline-grid;
+}
 
+@media screen and (max-width: 960px) {
+  .baseAtrações > h1 {
+    font: normal 40pt Sansita Swashed;
+    display: flex;
+    color: #a4543e;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+    top: -120vh;
+    left: 20vh;
+    text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
+    font-size: 10vw;
+  }
+
+  .coluna1 {
+    flex: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    position: relative;
+    top: -10vh;
+    left: -10vh;
+    background-color: #6e3b3b;
+    border: 20px double #ffffff;
+  }
+
+  .coluna2 {
+    flex: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    position: relative;
+    top: -100vh;
+    left: -6vh;
+    background-color: #6e3b3b;
+    border: 20px double #ffffff;
+  }
 }
