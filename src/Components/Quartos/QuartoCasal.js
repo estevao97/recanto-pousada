@@ -6,11 +6,9 @@ import "./Quarto.css";
 
 function QuartoCasal() {
   return (
-    
     <div className="quarto-casal">
       <h1>Quarto Casal</h1>
       <div className="fundo-quartos">
-        
         <div className="Imagens-quartos">
           <Carrossel showArrows={true} autoPlay={true} infiniteLoop={true}>
             <div>
@@ -27,20 +25,21 @@ function QuartoCasal() {
             </div>
           </Carrossel>
         </div>
-        <div className="descricao-quartos"><br/><p>Nossos quartos casal possuem a melhor infraestrutura para receber você e seu cônjuge com todo o respeito e privacidade necessários. Venha já ter sua melhor
-        experiência e melhor estadia que uma pousada pode oferecer. Apenas R$120 por dia</p><br/>
-        <div className="btn-quarto">
-            {Button && (
-              <Button
-              >
-                Reserve agora!
-              </Button>
-            )}
+        <div className="descricao-quartos">
+          <br />
+          <p>
+            Nossos quartos casal possuem a melhor infraestrutura para receber
+            você e seu cônjuge com todo o respeito e privacidade necessários.
+            Venha já ter sua melhor experiência e melhor estadia que uma pousada
+            pode oferecer. <h2>Apenas R$120 por dia!</h2>
+          </p>
+          <br />
+          <div className="btn-quarto">
+            {Button && <Button>Reserve agora!</Button>}
           </div>
-        
         </div>
       </div>
-      </div>
-  )
+    </div>
+  );
 }
 export default QuartoCasal;
