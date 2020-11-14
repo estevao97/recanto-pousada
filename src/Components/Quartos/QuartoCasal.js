@@ -1,7 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as Carrossel } from "react-responsive-carousel";
-import Button from "../../Components/Button/Button";
+import Button from "./BotãoQuarto.js";
 import "./Quarto.css";
 
 function QuartoCasal() {
@@ -35,7 +35,11 @@ function QuartoCasal() {
           </p>
           <br />
           <div className="btn-quarto">
-            {Button && <Button>Reserve agora!</Button>}
+            {
+              <Button variant="contained" color="primary" disableElevation>
+                Reservar!
+              </Button>
+            }
           </div>
         </div>
       </div>
