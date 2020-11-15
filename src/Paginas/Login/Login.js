@@ -4,6 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "../../Components/Button/Button";
 import Footer from "../../Components/Footer/Footer";
+import api from "../../services/api";
 import "./Login.css";
 
 const CssTextField = withStyles({
@@ -27,12 +28,18 @@ const CssTextField = withStyles({
 
 function Login() {
   const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [senha, setSenha] = useState();
   const history = useHistory();
 
-  function login() {
-    if (email === "pauloestevao92@gmail.com" && password === 123) {
-      history.push("cadastro");
+  async function handleLogin(e) {
+    try {
+      const response = await api.post("login", { email, senha });
+      localStorage.setItem("nameUser", response.data.name);
+
+      alert("Você conseguiu!:)");
+      history.push("/perfil");
+    } catch (err) {
+      alert("Falha no login.Tente novamente.Você consegue!:)");
     }
   }
 
@@ -58,7 +65,8 @@ function Login() {
               label="Email"
               variant="outlined"
               id="email"
-              onClick={login()}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="linha">
@@ -78,7 +86,8 @@ function Login() {
               label="Senha"
               variant="outlined"
               id="senha"
-              onClick={login()}
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
             />
           </div>
           <Link className="link-cadastro" to="cadastro">
@@ -86,12 +95,7 @@ function Login() {
           </Link>
           <div className="btn-login">
             {Button && (
-              <Button
-                buttonStyle="btn--outline"
-                onClick={() => {
-                  login();
-                }}
-              >
+              <Button buttonStyle="btn--outline" onClick={handleLogin}>
                 Login
               </Button>
             )}
