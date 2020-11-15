@@ -6,6 +6,8 @@ import Button from "../../Components/Button/Button";
 import est from "./Estados.js";
 import "./Cadastro.css";
 import Footer from "../../Components/Footer/Footer";
+import alertify from "alertifyjs";
+import api from "../../services/api";
 
 const _estados = est;
 
@@ -32,7 +34,28 @@ const CssTextField = withStyles({
 })(TextField);
 
 function Cadastro() {
-  const [estado, setEstado] = useState();
+  const [name, setName] = useState("");
+  const [cpf, setCpf] = useState("");
+  const [rua, setRua] = useState("");
+  const [numero, setNumero] = useState("");
+  const [cidade, setCidade] = useState("");
+  const [estado, setEstado] = useState("");
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+
+  async function handleRegister() {
+    const data = { name, cpf, rua, numero, cidade, estado, email, senha };
+
+    try {
+      const response = await api.post("cadastro", data);
+      alert(
+        `Yeah! Você foi cadastrado com sucesso, seja bem vindo ao nosso recanto! 
+Aqui está o seu ID de acesso: ${response.data.id}`
+      );
+    } catch (err) {
+      alertify.error("Teve um erro no cadastro, tente novamente.");
+    }
+  }
 
   const handleChange = (event) => {
     setEstado(event.target.value);
@@ -41,7 +64,7 @@ function Cadastro() {
   return (
     <div>
       <div className="base-cadastro">
-        <div className="forms-cadastro">
+        <form className="forms-cadastro">
           <h1>Registre-se</h1>
           <div className="linhas-comp">
             <CssTextField
@@ -59,7 +82,10 @@ function Cadastro() {
               label="Nome"
               variant="outlined"
               id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
+
             <CssTextField
               InputLabelProps={{
                 style: {
@@ -75,6 +101,8 @@ function Cadastro() {
               label="CPF"
               variant="outlined"
               id="cpf"
+              value={cpf}
+              onChange={(e) => setCpf(e.target.value)}
             />
           </div>
           <div className="linhas-comp">
@@ -93,6 +121,8 @@ function Cadastro() {
               label="Rua"
               variant="outlined"
               id="rua"
+              value={rua}
+              onChange={(e) => setRua(e.target.value)}
             />
             <CssTextField
               InputLabelProps={{
@@ -109,6 +139,8 @@ function Cadastro() {
               label="N°"
               variant="outlined"
               id="numero"
+              value={numero}
+              onChange={(e) => setNumero(e.target.value)}
             />
           </div>
           <div className="linhas-comp">
@@ -127,6 +159,8 @@ function Cadastro() {
               label="Cidade"
               variant="outlined"
               id="cidade"
+              value={cidade}
+              onChange={(e) => setCidade(e.target.value)}
             />
 
             <CssTextField
@@ -185,6 +219,8 @@ function Cadastro() {
               label="Email"
               variant="outlined"
               id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="linha-unica">
@@ -204,16 +240,23 @@ function Cadastro() {
               label="Senha"
               variant="outlined"
               id="senha"
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
             />
           </div>
           <div className="linha-unica">
             {Button && (
-              <Button className="btn-teste" buttonStyle="btn--outline">
+              <Button
+                className="btn-teste"
+                buttonStyle="btn--outline"
+                type="submit"
+                onClick={handleRegister}
+              >
                 REGISTRAR
               </Button>
             )}
           </div>
-        </div>
+        </form>
       </div>
       <Footer />
     </div>

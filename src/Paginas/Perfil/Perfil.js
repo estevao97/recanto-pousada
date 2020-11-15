@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './Perfil.css';
-import Footer from '../../Components/Footer/Footer';
-import CardReserva from '../../Components/CardReserva/CardReserva';
-import Usuario from '../../Components/Usuario/Usuario';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Perfil.css";
+import Footer from "../../Components/Footer/Footer";
+import CardReserva from "../../Components/CardReserva/CardReserva";
+import Usuario from "../../Components/Usuario/Usuario";
 
 function Perfil() {
+  const nameUser = localStorage.getItem("nameUser");
   return (
     <div>
       <div className="BasePerfil">
         <div className="user">
-          <Usuario nome="Miguel Scatolin" />
+          <Usuario nome={nameUser} />
         </div>
 
         <div className="Grade">

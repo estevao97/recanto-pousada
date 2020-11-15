@@ -28,8 +28,25 @@
   align-items: center;
   margin-top: 24vh;
   position: relative;
+<<<<<<< HEAD
   top: -10vh;
   left: -25vh;
+=======
+
+  color: #ffffff;
+  border-radius: 2%;
+  padding: 5px;
+}
+.texto2 {
+  width: 80%;
+  font: normal 40pt Roboto;
+  font-size: 1vw;
+  position: relative;
+
+  color: #ffffff;
+  border-radius: 2%;
+  padding: 5px;
+>>>>>>> login
 }
 
 .cartao1 {
@@ -72,9 +89,21 @@
   display: inline-grid;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 960px) {
   .baseAtrações > h1 {
     font: normal 40pt Sansita Swashed;
+=======
+.cardatracao {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 960px) {
+  .testinho {
+>>>>>>> login
     display: flex;
     color: #a4543e;
     height: 10vh;
