@@ -138,3 +138,6 @@
   flex-grow: 1;
   margin: 2%;
 }
+.texto {
+  text-decoration: none;
+}

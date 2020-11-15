@@ -14,6 +14,7 @@ const styles = {
     color: "white",
     height: 65,
     padding: "0 30px",
+    fontSize: 25,
     boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
   },
 };
@@ -22,7 +23,7 @@ function ClassNames(props) {
   const { classes, children, className, ...other } = props;
 
   return (
-    <Link to="/Login">
+    <Link to="/Login" className="texto">
       <Button className={clsx(classes.root, className)} {...other}>
         {children || "class names"}
       </Button>
