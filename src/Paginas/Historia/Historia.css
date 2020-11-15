@@ -47,7 +47,7 @@ div#root {
   flex-grow: 1;
   position: relative;
   top: -300px;
-  left: 340px;
+  left: 350px;
   width: 200vw;
   height: 80%;
 }
@@ -79,7 +79,7 @@ div#root {
 .imagem2 {
   background: #a4543e;
   position: relative;
-  top: -320px;
+  top: -325px;
   left: 100px;
   width: 25%;
   height: 25%;
