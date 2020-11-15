@@ -62,21 +62,21 @@
   text-shadow: rgba(0, 0, 0, 0.234) 2px 2px 2px;
 }
 .quarto-casal > p {
-  font-family: "Roboto", "Sansita Swashed", "Ubuntu", sans-serif;
+  font-family: 'Roboto', 'Sansita Swashed', 'Ubuntu', sans-serif;
   text-align: center;
   margin-top: 8px;
   color: rgb(44, 24, 24);
-  font-size: 32px;
+  font-size: 35px;
 }
 .quarto-solteiro > p {
-  font-family: "Roboto", "Sansita Swashed", "Ubuntu", sans-serif;
+  font-family: 'Roboto', 'Sansita Swashed', 'Ubuntu', sans-serif;
   text-align: center;
   margin-top: 8px;
   color: rgb(44, 24, 24);
   font-size: 32px;
 }
 .quarto-familia > p {
-  font-family: "Roboto", "Sansita Swashed", "Ubuntu", sans-serif;
+  font-family: 'Roboto', 'Sansita Swashed', 'Ubuntu', sans-serif;
   text-align: center;
   margin-top: 8px;
   color: rgb(44, 24, 24);
@@ -119,14 +119,23 @@
   padding-right: 2%;
 }
 .descricao-quartos > p {
+  padding-top: 1.5%;
   text-align: center;
-  font: normal 25pt Roboto;
-  font-size: 2.3vw;
+  font: normal 20pt Roboto;
   max-width: 100%;
   text-align: justify;
   text-justify: inter-cluster;
 }
-@media only screen and (max-width: 600px) {
+
+.descricao-quartos > h2 {
+  font: normal 20pt Roboto;
+  text-align: center;
+  display: flex;
+  padding-left: 12vw;
+  font-weight: bold;
+}
+
+.@media only screen and (max-width: 600px) {
   p {
     font-size: 12px;
   }
@@ -137,4 +146,8 @@
   align-items: center;
   flex-grow: 1;
   margin: 2%;
+}
+
+.btn-quarto:hover {
+  color: #e47a7a;
 }

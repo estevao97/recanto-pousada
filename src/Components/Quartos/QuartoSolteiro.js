@@ -1,8 +1,8 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel as Carrossel } from "react-responsive-carousel";
-import Button from "./BotãoQuarto.js";
-import "./Quarto.css";
+import React from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel as Carrossel } from 'react-responsive-carousel';
+import Button from './BotãoQuarto.js';
+import './Quarto.css';
 
 function QuartoSolteiro() {
   return (
@@ -31,8 +31,9 @@ function QuartoSolteiro() {
             Nossos quartos de solteiro apresentam o melhor conforto e as
             melhores instalações que você e seus amigos merecem. Venha já passar
             maravilhosos momentos no Recanto da Pousada.
-            <h2>Apenas R$100 por dia!</h2>
           </p>
+          <h2>Apenas R$100 por dia!</h2>
+
           <br />
           <div className="btn-quarto">
             {

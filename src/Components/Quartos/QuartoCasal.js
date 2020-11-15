@@ -1,8 +1,8 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel as Carrossel } from "react-responsive-carousel";
-import Button from "./BotãoQuarto.js";
-import "./Quarto.css";
+import React from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel as Carrossel } from 'react-responsive-carousel';
+import Button from './BotãoQuarto.js';
+import './Quarto.css';
 
 function QuartoCasal() {
   return (
@@ -31,8 +31,10 @@ function QuartoCasal() {
             Nossos quartos casal possuem a melhor infraestrutura para receber
             você e seu cônjuge com todo o respeito e privacidade necessários.
             Venha já ter sua melhor experiência e melhor estadia que uma pousada
-            pode oferecer. <h2>Apenas R$120 por dia!</h2>
+            pode oferecer.{' '}
           </p>
+          <h2>Apenas R$120 por dia!</h2>
+
           <br />
           <div className="btn-quarto">
             {
