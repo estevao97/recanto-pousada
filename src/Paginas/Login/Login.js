@@ -36,10 +36,10 @@ function Login() {
       const response = await api.post("login", { email, senha });
       localStorage.setItem("nameUser", response.data.name);
 
-      alert("Você conseguiu!:)");
+      alert("Sejx bem vindx !");
       history.push("/perfil");
     } catch (err) {
-      alert("Falha no login.Tente novamente.Você consegue!:)");
+      alert("Falha no login.Tente novamente.");
     }
   }
 

@@ -49,8 +49,7 @@ function Cadastro() {
     try {
       const response = await api.post("cadastro", data);
       alert(
-        `Yeah! Você foi cadastrado com sucesso, seja bem vindo ao nosso recanto! 
-Aqui está o seu ID de acesso: ${response.data.id}`
+        `Yeah! Você foi cadastrado com sucesso, seja bem vindo ao nosso recanto! \o/`
       );
     } catch (err) {
       alertify.error("Teve um erro no cadastro, tente novamente.");
