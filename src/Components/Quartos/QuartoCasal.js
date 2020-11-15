@@ -31,7 +31,7 @@ function QuartoCasal() {
             Nossos quartos casal possuem a melhor infraestrutura para receber
             você e seu cônjuge com todo o respeito e privacidade necessários.
             Venha já ter sua melhor experiência e melhor estadia que uma pousada
-            pode oferecer. <h2>Apenas R$120 por dia!</h2>
+            pode oferecer. <h3>Apenas R$120 por dia!</h3>
           </p>
           <br />
           <div className="btn-quarto">

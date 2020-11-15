@@ -31,7 +31,7 @@ function QuartoSolteiro() {
             Nossos quartos de solteiro apresentam o melhor conforto e as
             melhores instalações que você e seus amigos merecem. Venha já passar
             maravilhosos momentos no Recanto da Pousada.
-            <h2>Apenas R$100 por dia!</h2>
+            <h3>Apenas R$100 por dia!</h3>
           </p>
           <br />
           <div className="btn-quarto">

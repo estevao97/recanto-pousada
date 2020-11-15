@@ -32,7 +32,7 @@ function QuartoFamilia() {
             Traga já sua família para aproveitar o melhor que uma pousada pode
             oferecer. Nossos quartos família são amplos, confortáveis, e uma
             excelente opcão para uma estadia de qualidade na melhor pousada de
-            Minas Gerais.<h2>Apenas R$150 por dia!</h2>
+            Minas Gerais.<h3>Apenas R$150 por dia!</h3>
           </p>
           <br />
           <div className="btn-quarto">
