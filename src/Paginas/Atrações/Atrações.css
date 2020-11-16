@@ -1,118 +1,69 @@
-.baseAtrações {
+.base-atracoes {
   background: rgb(255, 248, 205) center center/cover no-repeat;
-  height: 250vh;
+  height: 230vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
 }
-.baseAtrações > h1 {
+.cards-atracoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #6e3b3b;
+  border-radius: 0%;
+  padding: 1%;
+  flex-grow: 1;
+  max-width: 80%;
+  position: relative;
+  right: 20vh;
+}
+.base-atracoes > h1 {
+  display: flex;
+  justify-content: center;
   font: normal 40pt Sansita Swashed;
-  display: flex;
-  color: #a4543e;
-  height: 10vh;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-  position: relative;
-  top: -110vh;
-  left: 39vw;
+  text-align: center;
+  font-size: 4vw;
+  color: rgb(77, 29, 29);
+  height: 15%;
   text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
-  font-size: 6vw;
-}
-.coluna1 {
-  flex: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 24vh;
   position: relative;
-  top: -10vh;
-  left: -25vh;
+  top: -90vh;
+  left: 80vh;
 }
 
-.cartao1 {
-  padding-top: 5vh;
-  padding-left: 5vh;
-  padding-right: 5vh;
-  padding-bottom: 5vh;
-  background-color: #6e3b3b;
-  border: 50vw;
-  border-radius: 15px;
-  margin-top: 24vh;
-  grid-template-columns: 345px;
-  grid-gap: 20px;
-  display: inline-grid;
-}
-
-.coluna2 {
-  flex: 80%;
+.cards-linha {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 24vh;
-  position: relative;
-  top: -8.5vh;
-  left: -16vh;
-}
-
-.cartao2 {
-  padding-top: 5vh;
-  padding-left: 5vh;
-  padding-right: 5vh;
-  padding-bottom: 5vh;
-  background-color: #6e3b3b;
-  border: 50vw;
-  border-radius: 15px;
-  margin-top: 24vh;
-  grid-template-columns: 345px;
-  grid-gap: 20px;
-  display: inline-grid;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 1%;
 }
 
 @media screen and (max-width: 960px) {
-  .baseAtrações > h1 {
-    font: normal 40pt Sansita Swashed;
-    display: flex;
-    color: #a4543e;
-    height: 10vh;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    position: relative;
-    top: -120vh;
-    left: 20vh;
-    text-shadow: rgba(0, 0, 0, 0.589) 2px 2px 2px;
-    font-size: 10vw;
-  }
-
-  .coluna1 {
-    flex: 80%;
+  .cards-atracoes {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 0px;
-    position: relative;
-    top: -10vh;
-    left: -10vh;
-    background-color: #6e3b3b;
-    border: 20px double #ffffff;
+    background: #6e3b3b;
+    border-radius: 0%;
+    padding: 1%;
+    width: 100vw;
+    height: 90%;
+  }
+  .cards-atracoes > h1 {
+    font-size: 8vw;
+    height: 7%;
   }
 
-  .coluna2 {
-    flex: 80%;
-    display: flex;
+  .cards-linha {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    position: relative;
-    top: -100vh;
-    left: -6vh;
-    background-color: #6e3b3b;
-    border: 20px double #ffffff;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 2%;
+    height: 50vh;
+    width: 150vw;
+  }
+  .MuiPaper-rootMuiCard-rootmakeStyles-root-1MuiPaper-elevation1MuiPaper-rounded {
+    height: 100%;
   }
 }

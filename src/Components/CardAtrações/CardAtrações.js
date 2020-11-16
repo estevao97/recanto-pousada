@@ -18,25 +18,26 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345
+    width: "30%",
   },
+
   media: {
     height: 0,
-    paddingTop: "56.25%" // 16:9
+    paddingTop: "56.25%", // 16:9
   },
   expand: {
     transform: "rotate(0deg)",
     marginLeft: "auto",
     transition: theme.transitions.create("transform", {
-      duration: theme.transitions.duration.shortest
-    })
+      duration: theme.transitions.duration.shortest,
+    }),
   },
   expandOpen: {
-    transform: "rotate(180deg)"
+    transform: "rotate(180deg)",
   },
   avatar: {
-    backgroundColor: red[500]
-  }
+    backgroundColor: red[500],
+  },
 }));
 
 export default function RecipeReviewCard(props) {
@@ -49,10 +50,7 @@ export default function RecipeReviewCard(props) {
 
   return (
     <Card className={classes.root}>
-      <CardHeader
-       
-        title={props.title}
-      />
+      <CardHeader title={props.title} />
       <CardMedia
         className={classes.media}
         image={props.image}
@@ -60,13 +58,13 @@ export default function RecipeReviewCard(props) {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-            {props.apresentacao}
+          {props.apresentacao}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded
+            [classes.expandOpen]: expanded,
           })}
           onClick={handleExpandClick}
           aria-expanded={expanded}
@@ -77,13 +75,7 @@ export default function RecipeReviewCard(props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          
-         
-          <Typography paragraph>
-              {props.detalhamento}
-          </Typography>
-         
-          
+          <Typography paragraph>{props.detalhamento}</Typography>
         </CardContent>
       </Collapse>
     </Card>
