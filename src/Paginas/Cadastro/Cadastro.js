@@ -81,6 +81,7 @@ function Cadastro() {
               label="Nome"
               variant="outlined"
               id="name"
+              required="true"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -98,6 +99,7 @@ function Cadastro() {
               }}
               className="dados"
               label="CPF"
+              required="true"
               variant="outlined"
               id="cpf"
               value={cpf}
@@ -118,6 +120,7 @@ function Cadastro() {
               }}
               className="dados"
               label="Rua"
+              required="true"
               variant="outlined"
               id="rua"
               value={rua}
@@ -136,6 +139,7 @@ function Cadastro() {
               }}
               className="numero"
               label="N°"
+              required="true"
               variant="outlined"
               id="numero"
               value={numero}
@@ -156,6 +160,7 @@ function Cadastro() {
               }}
               className="dados"
               label="Cidade"
+              required="true"
               variant="outlined"
               id="cidade"
               value={cidade}
@@ -175,6 +180,7 @@ function Cadastro() {
               }}
               className="dados"
               label="Estado"
+              required="true"
               variant="outlined"
               id="Estado"
               select
@@ -194,6 +200,7 @@ function Cadastro() {
                     },
                   }}
                   className="menu"
+                  required="true"
                   key={option.value}
                   value={option.value}
                 >
@@ -216,6 +223,7 @@ function Cadastro() {
               }}
               className="dados"
               label="Email"
+              required="true"
               variant="outlined"
               id="email"
               value={email}
@@ -237,6 +245,7 @@ function Cadastro() {
               className="dados"
               type="password"
               label="Senha"
+              required="true"
               variant="outlined"
               id="senha"
               value={senha}
